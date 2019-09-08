@@ -5,7 +5,7 @@
 
 /************************************************************************************************/
 /* Custom CSS for Thunderbird 68+ ***************************************************************/
-/* version 1.0.0 ********************************************************************************/
+/* version 1.0.1 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -107,7 +107,7 @@
 /* GENERAL THUNDERBIRD APPEARANCE ****************************************************************/
 
 /* Toolbar appearance - [only use one at a time] *************************************************/
-@import "./css/general/toolbar_and_ui_appearance_default.css"; /**/
+/* @import "./css/general/toolbar_and_ui_appearance_default.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_aero.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass1.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass2.css"; /**/
@@ -128,11 +128,13 @@
 /* Compose window - Bold, Italic, Underlined icons ***********************************************/
 @import "./css/general/write_window_replace_aaa_icons_with_biu_icons.css"; /**/
 
-/* Quickfilter toolbar settings - [only use one at a time] ***************************************/
+/* Quickfilter toolbar settings ******************************************************************/
+/* @import "./css/general/quickfilterbar_at_the_bottom.css"; /**/
+
+/* Quickfilter button mode - [only use one at a time] ********************************************/
 /* @import "./css/general/quickfilterbar_text_only.css"; /**/
 /* @import "./css/general/quickfilterbar_icons_only.css"; /**/
 /* @import "./css/general/quickfilterbar_icons_and_text.css"; /**/
-/* @import "./css/general/quickfilterbar_at_the_bottom.css"; /**/
 
 /* Menubar appearance and position - [only use one at a time] ************************************/
 /* @import "./css/general/menubar_above_tabs.css"; /**/
