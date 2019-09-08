@@ -1,6 +1,6 @@
 ## Downloads for Thunderbird Quantum (68+)
 
-**[CustomCSSforFx releases & changelog](https://github.com/Aris-t2/CustomCSSforTb/releases)**  
+**[CustomCSSforTb releases & changelog](https://github.com/Aris-t2/CustomCSSforTb/releases)**  
 
 ## Want to support this project?
 
