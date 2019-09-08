@@ -1,0 +1,138 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#MailPreferences {
+  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+}
+
+
+#preferencesContainer,
+.groupbox-body,
+#dialogFrame,
+#MailPreferences #preferencesContainer,
+#MailPreferences .paneDeckContainer{
+  background: white !important;
+}
+
+#prefBox,
+#categories,#pref-category-box,
+#MailPreferences #category-box{
+  background: transparent !important;
+}
+
+#MailPreferences #category-box radio {
+  margin-inline-start: 0px !important;
+}
+
+/* main colors category items */
+#MailPreferences #category-box radio[selected]{
+  background-color: white !important;
+  color: black !important;
+}
+
+#MailPreferences #category-box radio:not([selected]):hover{
+  background-color: Highlight !important;
+  color: HighlightText !important;
+}
+
+#MailPreferences #category-box radio:not([selected]):not(:hover){
+  color: black !important;
+}
+
+/* tweaks for small windows */
+@media (max-width: 830px) {
+  
+  #MailPreferences #category-box radio {
+	padding-inline-start: 10px !important;
+	margin-inline-end: 0px !important;
+  }
+
+}
+
+
+	/* main colors category items */
+	#categories .category[selected],
+	#pref-category-box radio[selected] {
+	  background-color: white !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):hover,
+	#pref-category-box radio:not([selected]):hover {
+	  background-color: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+	#categories .category:not([selected]):not(:hover),
+	#pref-category-box radio:not([selected]):not(:hover){
+	  color: black !important;
+	}
+	#categories .category,
+	#pref-category-box radio {
+	  transition-duration: unset !important;
+	}
+	
+	/* category icons */
+	#pref-category-box radio > image, 
+	#categories .category .category-icon {
+	  height: 32px !important;
+	  width: 32px !important;
+	}
+	
+	.category,#pref-category-box radio {
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	}
+
+/* colorize category icons */
+#MailPreferences radio[pane="paneCompose"] image {
+  fill: #8aa8cc !important;
+}
+
+#MailPreferences radio[pane="paneLightning"] image,
+#MailPreferences radio[pane="paneGeneral"] image {
+  fill: #8b8b8b !important;
+}
+
+#MailPreferences radio[pane="paneChat"] image {
+  fill: #63c54f !important;
+}
+
+#MailPreferences radio[pane="paneDisplay"] image {
+  fill: #ffba2f !important;
+}
+
+#MailPreferences radio[pane="category-plugin"] image {
+  fill: #2b63c1 !important;
+}
+
+#MailPreferences radio[pane="panePrivacy"] image {
+  fill: purple !important;
+}
+
+#MailPreferences radio[pane="paneSecurity"] image {
+  fill: red !important;
+}
+
+#MailPreferences radio[pane="paneAdvanced"] image {
+  fill: orange !important;
+}
+
+#MailPreferences radio[pane="paneApplications"] image {
+  fill: #b99c16 !important;
+}
+
+#MailPreferences radio[pane]:not([selected="true"]):hover image {
+  filter: brightness(2.00) !important;
+}
+
+#MailPreferences radio[pane] {
+  transition: 0.01ms !important;
+}
+
+/* buttons / menulists */
+#MailPreferences button,
+#MailPreferences menulist{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+}

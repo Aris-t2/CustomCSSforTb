@@ -1,0 +1,351 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+	/* unset default buttons appearance */
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete) .toolbarbutton-icon,
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete) .toolbarbutton-menubutton-button .toolbarbutton-icon,
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete) .toolbarbutton-menubutton-dropmarker {
+	  -moz-appearance: none !important;
+	  background: none !important;
+	  background-image: none !important;
+	  border-color: transparent !important;
+	  border:0 !important;
+	  box-shadow: none !important;
+	  transition-property: none !important;
+      transition-duration: 0ms !important;
+	}
+
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete),
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete) .toolbarbutton-menubutton-button,
+	#mail-bar3 toolbarbutton .toolbarbutton-badge-container,
+	#mail-bar3 toolbarbutton .toolbarbutton-badge-stack,
+	#mail-bar3 toolbarbutton .toolbarbutton-badge-container .toolbarbutton-icon,
+	#mail-bar3 toolbarbutton .toolbarbutton-badge-stack .toolbarbutton-icon {
+	  -moz-appearance: none !important;
+	  background: none !important;
+	  border:0 !important;
+	  box-shadow: none !important;
+	}
+	
+	#tabs-toolbar :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-icon,
+	#tabs-toolbar :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-container > .toolbarbutton-icon,
+	#tabs-toolbar :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+	#tabs-toolbar :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-menubutton-button > .toolbarbutton-icon {
+	  -moz-appearance: none !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	  background:none !important;
+	  box-shadow: none !important;
+	}
+
+	/* style dropmarkers */
+	.toolbarbutton-1 dropmarker{
+	  -moz-appearance: none !important;
+	  -moz-box-align: center !important;
+	  list-style-image: url("../../images/tb_toolbar_noia_dropmarker.png") !important;
+	  -moz-image-region: rect(0 10px 10px 0) !important;	
+	}
+
+	.toolbarbutton-1 dropmarker .dropmarker-icon {
+	  min-width:10px !important;
+	  min-height:10px !important;
+	  width:10px !important;
+	  height:10px !important;
+	}
+
+	.toolbarbutton-1:not([disabled]):hover dropmarker{
+	  filter: brightness(1.15) !important;
+	}
+	
+	/* button sizes*/
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-icon,
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-container > .toolbarbutton-icon,
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-menubutton-button > .toolbarbutton-icon  {
+	  width: 20px !important;
+	}
+	
+	#mail-bar3 :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-icon,
+	#mail-bar3 :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-container > .toolbarbutton-icon,
+	#mail-bar3 :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-badge-stack > .toolbarbutton-icon,
+	#mail-bar3 :-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):-moz-any([cui-areatype="toolbar"],:not([cui-areatype])) > .toolbarbutton-menubutton-button > .toolbarbutton-icon  {
+	  width: 32px !important;
+	  height: 32px !important;
+	  padding: unset !important;
+	  margin: unset !important;
+	}
+	
+	/* buttons hover effect */
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete):not([disabled]):-moz-any(:hover,:active,:hover:active,[checked="true"],[open]) {
+      filter: brightness(1.15) !important;
+	}
+	
+	/* Mail Bar Toolbar icons */
+	:-moz-any(#button-getmsg, #button-newmsg, #button-address, #button-reply, #button-replyall, #button-forward, #button-replylist, #button-mark-deleted, #button-compact, #button-isJunk, #button-print, #button-stop, #button-file, #button-nextUnread, #button-previousUnread, #button-mark, #button-tag, #button-goback, #button-goforward, #button-archive, #qfb-show-filter-bar, #button-chat, #button-nextMsg, #button-previousMsg, #button-appmenu, #calendar-tab-button, #lightning-button-calendar, #extractEventButton, #task-tab-button, #lightning-button-tasks, #extractTaskButton, #button-send, #button-contacts, #spellingButton, #button-attach, #button-security, #button-save, #quoteButton, #cut-button, #copy-button, #paste-button, #task-edit-button, #calendar-edit-button, #task-delete-button, #calendar-delete-button, #task-synchronize-button, #calendar-synchronize-button, #task-newevent-button, #calendar-newevent-button, #task-newtask-button, #calendar-newtask-button, #task-appmenu-button, #calendar-appmenu-button, #task-print-button, #calendar-print-button, #calendar-goto-today-button, #calendar-unifinder-button, #calendar-add-task-button, /*#todaypane-new-event-button,*/ #button-privacy, #button-url, #button-delete, #button-attendees, #button-priority, #button-status, #button-freebusy, #button-timezones, #hdrTagButton, #hdrDualForwardButton, #hdrReplyToSenderButton, #hdrDummyReplyButton, #hdrReplyButton, #hdrReplyAllButton, #hdrReplyListButton, #hdrFollowupButton, #hdrForwardButton, #hdrArchiveButton, #hdrJunkButton, #hdrTrashButton, #otherActionsButton, #attachmentSaveAllSingle, #attachmentSaveAllMultiple, #button-add-buddy, #button-newcard, #button-newlist, #button-editcard, #button-chat-accounts, #button-newmessage, #button-abdelete, #button-newim, #button-join-chat, #button-chat-appmenu, #qfb-sticky, #qfb-unread, #qfb-starred, #qfb-inaddrbook, #qfb-tags, #qfb-attachment, #hdrExtractTaskButton, #hdrExtractEventButton, #button-notJunk, #button-mark-undelete) {
+	  list-style-image: url("../../images/tb_toolbar_noia.png") !important;
+	}
+
+	#button-getmsg {
+	  -moz-image-region: rect(0px 32px 32px 0px) !important;
+	}
+
+	#button-newmessage,
+	#button-newmsg {
+	  -moz-image-region: rect(0px 64px 32px 32px) !important;
+	}
+
+	#qfb-inaddrbook,
+	#button-address {
+	  -moz-image-region: rect(0px 96px 32px 64px) !important;
+	}
+	
+	#hdrReplyToSenderButton, #hdrDummyReplyButton,
+	#hdrReplyButton, #hdrFollowupButton,
+	#button-reply {
+	  -moz-image-region: rect(0px 128px 32px 96px) !important;
+	}
+
+	#hdrReplyAllButton,
+	#button-replyall {
+	  -moz-image-region: rect(0px 160px 32px 128px) !important;
+	}
+
+	#hdrForwardButton,
+	#hdrDualForwardButton,
+	#button-forward {
+	  -moz-image-region: rect(0px 192px 32px 160px) !important;
+	}
+
+	#hdrReplyListButton,
+	#button-replylist {
+	  -moz-image-region: rect(0px 224px 32px 192px) !important;
+	}
+	
+	#button-abdelete, #button-mark-undelete,
+	#button-delete, #hdrTrashButton,
+	#task-delete-button, #calendar-delete-button, 
+	#button-mark-deleted {
+	  -moz-image-region: rect(0px 256px 32px 224px) !important;
+	}
+
+	#button-compact {
+	  -moz-image-region: rect(0px 608px 32px 576px) !important;
+	}
+
+	#hdrJunkButton,#button-notJunk,
+	#button-isJunk {
+	  -moz-image-region: rect(0px 288px 32px 256px) !important;
+	}
+	
+	#task-print-button, #calendar-print-button,
+	#button-print {
+	  -moz-image-region: rect(0px 320px 32px 288px) !important;
+	}
+
+	#button-stop {
+	-moz-image-region: rect(0px 352px 32px 320px) !important;
+	}
+
+	#attachmentSaveAllSingle, #attachmentSaveAllMultiple,
+	#qfb-attachment, #button-file {
+	  -moz-image-region: rect(0px 384px 32px 352px) !important;
+	}
+
+	#button-nextUnread {
+	  -moz-image-region: rect(0px 416px 32px 384px) !important;
+	}
+
+	#button-previousUnread {
+	  -moz-image-region: rect(0px 448px 32px 416px) !important;
+	}
+
+	#button-mark {
+	  -moz-image-region: rect(0px 480px 32px 448px) !important;
+	}
+
+	#hdrTagButton, #qfb-tags,
+	#button-tag {
+	  -moz-image-region: rect(0px 512px 32px 480px) !important;
+	}
+
+	#button-goback {
+	  -moz-image-region: rect(0px 544px 32px 512px) !important;
+	}
+
+	#button-goforward {
+	  -moz-image-region: rect(0px 576px 32px 544px) !important;
+	}
+
+	#hdrArchiveButton,
+	#button-archive {
+	  -moz-image-region: rect(0px 640px 32px 608px) !important;
+	}
+	
+	#calendar-unifinder-button,
+	#qfb-show-filter-bar {
+	  -moz-image-region: rect(0px 672px 32px 640px) !important;
+	}
+	
+	#button-newim, #button-join-chat,
+	#button-chat {
+	  -moz-image-region: rect(0px 704px 32px 672px) !important;
+	}
+
+	#button-nextMsg {
+	  -moz-image-region: rect(0px 736px 32px 704px) !important;
+	}
+
+	#button-previousMsg {
+	  -moz-image-region: rect(0px 768px 32px 736px) !important;
+	}
+	
+	#button-chat-appmenu,
+	#task-appmenu-button, #calendar-appmenu-button,
+	#button-appmenu {
+	  -moz-image-region: rect(0px 800px 32px 768px) !important;
+	}
+	
+	#calendar-tab-button, #calendar-goto-today-button,
+	#lightning-button-calendar {
+	  -moz-image-region: rect(0px 832px 32px 800px) !important;
+	}
+	
+	/*#todaypane-new-event-button,*/ #hdrExtractEventButton,
+	#task-newevent-button, #calendar-newevent-button, 
+	#extractEventButton {
+	  -moz-image-region: rect(0px 864px 32px 832px) !important;
+	}
+	
+	#task-tab-button,
+	#lightning-button-tasks {
+	  -moz-image-region: rect(0px 896px 32px 864px) !important;
+	}
+	
+	#calendar-add-task-button,#hdrExtractTaskButton,
+	#task-newtask-button, #calendar-newtask-button,
+	#extractTaskButton {
+	  -moz-image-region: rect(0px 928px 32px 896px) !important;
+	}
+	
+	#button-send {
+	  -moz-image-region: rect(0px 960px 32px 928px) !important;
+	}
+	
+	#button-attendees,
+	#button-contacts {
+	  -moz-image-region: rect(0px 992px 32px 960px) !important;
+	}
+	
+	#spellingButton {
+	  -moz-image-region: rect(0px 1024px 32px 992px) !important;
+	}
+
+	#button-url,
+	#button-attach {
+	  -moz-image-region: rect(0px 1056px 32px 1024px) !important;
+	}
+	
+	#button-privacy,
+	#button-security {
+	  -moz-image-region: rect(0px 1088px 32px 1056px) !important;
+	}
+
+	#button-save {
+	  -moz-image-region: rect(0px 1120px 32px 1088px) !important;
+	}
+
+	#quoteButton {
+	  -moz-image-region: rect(0px 1152px 32px 1120px) !important;
+	}
+	
+	#cut-button {
+	  -moz-image-region: rect(0px 1184px 32px 1152px) !important;
+	}
+	
+	#copy-button {
+	  -moz-image-region: rect(0px 1216px 32px 1184px) !important;
+	}
+	
+	#paste-button {
+	  -moz-image-region: rect(0px 1248px 32px 1216px) !important;
+	}
+	
+	#task-edit-button, #calendar-edit-button {
+	  -moz-image-region: rect(0px 1280px 32px 1248px) !important;
+	}
+
+	#task-synchronize-button, #calendar-synchronize-button {
+	  -moz-image-region: rect(0px 1312px 32px 1280px) !important;
+	}
+	
+	#button-editcard, #button-priority, #button-chat-accounts {
+	  -moz-image-region: rect(0px 1344px 32px 1312px) !important;
+	}
+
+	#otherActionsButton,
+	#button-status {
+	  -moz-image-region: rect(0px 1376px 32px 1344px) !important;
+	}
+
+	#button-freebusy {
+	  -moz-image-region: rect(0px 1408px 32px 1376px) !important;
+	}
+
+	#button-timezones {
+	  -moz-image-region: rect(0px 1440px 32px 1408px) !important;
+	}
+	
+	#button-add-buddy, #button-newcard, #button-newlist  {
+	  -moz-image-region: rect(0px 1472px 32px 1440px) !important;
+	}
+	
+	#qfb-sticky  {
+	  -moz-image-region: rect(0px 1504px 32px 1472px) !important;
+	}
+
+	#qfb-unread  {
+	  -moz-image-region: rect(0px 1536px 32px 1504px) !important;
+	}
+
+	#qfb-starred {
+	  -moz-image-region: rect(0px 1568px 32px 1536px) !important;
+	}
+	
+	/* additional tweaks */
+	#mail-bar3 #button-file .toolbarbutton-icon,
+	#mail-bar3 #button-tag .toolbarbutton-icon,
+	#mail-bar3 #button-chat .toolbarbutton-icon,
+	#mail-bar3 #button-appmenu .toolbarbutton-icon {
+	  min-width:32px !important;
+	  min-height:32px !important;
+	  width:32px !important;
+	  height:32px !important;
+	  max-width: unset !important;
+	  max-height: unset !important;
+	}
+	
+	#mail-bar3 #button-file hbox vbox .toolbarbutton-icon,
+	#mail-bar3 #button-tag hbox vbox .toolbarbutton-icon {
+	  min-width:32px !important;
+	  min-height:32px !important;
+	  width:32px !important;
+	  height:32px !important;
+	  max-width: unset !important;
+	  max-height: unset !important;
+	}
+	
+	#otherActionsButton .toolbarbutton-icon {
+	  display: block !important;
+	}
+	
+	/* other tweaks */
+	#mail-bar3 * {
+	  clip-path: none !important;
+	}
+	
+	/* fix header buttons */
+	*:not(#mail-bar3) :-moz-any(#hdrTagButton,#otherActionsButton,#button-file,#button-chat,#button-tag) .toolbarbutton-icon{
+	  width:20px !important;
+	  height:20px !important;
+	}

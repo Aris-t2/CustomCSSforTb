@@ -1,0 +1,115 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+:root {
+  --appbuttonlabel: "Thunderbird";
+  --appbuttoncolor1: #33CCFF;
+  --appbuttoncolor2: #3366FF;
+  --appbuttontextcolor: #FFFFFF;
+  --appbuttontextshadowcolor: #000000;
+}
+
+#button-appmenu:not(:hover):not(:active):not([open]){
+  -moz-appearance: none !important;
+  background: linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
+  transition: unset !important;
+  border-top-color:hsla(214,89%,21%,.5) !important;
+  border-right-color:hsla(214,89%,21%,.5) !important;
+  border-left-color: hsla(214,89%,21%,.5) !important;
+  border-bottom-color: hsla(214,89%,21%,.5) !important;
+  box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
+			  0 0 2px 1px hsla(0,0%,100%,.25) inset,
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
+}
+#button-appmenu:hover:not(:active):not([open]){
+  -moz-appearance: none !important;
+  background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+			  linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
+  transition: unset !important;
+  border-color: rgba(83,42,6,.9) !important;
+  box-shadow: 0 1px 0 hsla(0,0%,100%,.15) inset,
+			  0 0 2px 1px hsla(0,0%,100%,.5) inset,
+			  0 -1px 0 hsla(0,0%,100%,.2),
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
+}
+#button-appmenu:active,
+#button-appmenu:hover:active,
+#button-appmenu[open] {
+  -moz-appearance: none !important;
+  background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
+			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
+			  linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
+  transition: unset !important;
+  border-color: rgba(83,42,6,.9) !important;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4) inset,
+			  0 1px 1px rgba(0,0,0,.2) inset,
+			  0 1px 0 0px rgba(255,255,255,.6),
+			  0 -1px 0 0px rgba(255,255,255,.6),
+			  1px 0 0 0px rgba(255,255,255,.6),
+			  -1px 0 0 0px rgba(255,255,255,.6) !important;
+}
+#button-appmenu {
+  -moz-appearance:none !important;
+  transition: unset !important;
+  background-clip: padding-box !important;
+  color: var(--appbuttontextcolor) !important;
+  text-shadow: 0 0 1px var(--appbuttontextshadowcolor),
+			   0 1px 1.5px var(--appbuttontextshadowcolor) !important;
+  font-weight: bold !important;
+  padding: 0px 8px !important;
+  border-top: 1px solid !important;
+  border-right: 1px solid !important;
+  border-left: 1px solid !important;
+  border-bottom: 1px solid !important;
+}
+#button-appmenu:not(:-moz-any(:hover:active,[open])) {
+  border-radius: 3px !important;
+}
+#button-appmenu:-moz-any(:hover:active,[open]) {
+  border-radius: 3px 3px 0 0 !important;
+}
+
+#tabs-toolbar #button-appmenu:not(:-moz-any(:hover:active,[open])),
+#tabs-toolbar #button-appmenu:-moz-any(:hover:active,[open]) {
+  border-radius: 3px 3px 0 0 !important;
+  -moz-margin-start: 0px !important;
+}
+
+
+#button-appmenu .toolbarbutton-menu-dropmarker {
+  display: -moz-box !important;
+}
+#button-appmenu .toolbarbutton-menu-dropmarker::before {
+  display: -moz-box !important; 
+  content: var(--appbuttonlabel) !important;
+  -moz-padding-end: 4px !important;
+}
+#button-appmenu .toolbarbutton-text {
+  display: none !important;
+}
+
+#button-appmenu .toolbarbutton-icon {
+  opacity: 0 !important;
+}
+
+#button-appmenu .toolbarbutton-menu-dropmarker::before {
+  -moz-margin-start: -20px !important;
+}
+
+#tabbar-toolbar {
+  margin-bottom: 1px !important;
+}
+
+#mail-toolbar-menubar2 #button-appmenu{
+  position: absolute !important;
+  margin-top: 0px !important;
+  -moz-margin-start: 0px !important;
+}

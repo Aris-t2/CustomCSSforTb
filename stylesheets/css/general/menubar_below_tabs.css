@@ -1,0 +1,175 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#mail-toolbar-menubar2 {
+  -moz-box-ordinal-group: 20 !important;
+  -moz-window-dragging: unset !important;
+  border: unset !important;
+  padding-top: unset !important;
+  margin-top: unset !important;
+}
+
+#messengerWindow[sizemode="normal"] #mail-toolbar-menubar2 {
+  border-left: 1px solid rgba(0,0,0,.4) !important;
+  border-right: 1px solid rgba(0,0,0,.4) !important;
+}
+		
+@media (-moz-os-version: windows-vista), (-moz-os-version: windows-win7) {
+
+	@media not all and (-moz-windows-glass) {
+
+		#mail-toolbar-menubar2:not(:-moz-lwtheme) {
+		  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),
+					  linear-gradient(-moz-dialog, -moz-dialog) !important;
+		}
+		
+		
+		#mail-toolbar-menubar2[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+		#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+		  display: -moz-box !important;
+		}
+
+		#messengerWindow[sizemode="maximized"] #tabs-toolbar {
+		  margin-top: -1px !important;
+		}
+		@media all and (-moz-windows-theme: aero) {
+			#mail-toolbar-menubar2:not(:-moz-lwtheme) {
+			   background: #eaf2fb !important;
+			}
+			#mail-toolbar-menubar2 {
+			  padding-bottom: 0px !important;
+			  margin-bottom: 0px !important;
+			}
+		}
+		@media all and (-moz-windows-classic) {
+			
+			#mail-toolbar-menubar2 menubar > menu {
+			  -moz-appearance: none !important;
+			}
+			
+			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) toolbarbutton > :-moz-any(label,description),
+			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
+			  color: black !important;
+			}
+			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu[_moz-menuactive="true"] {
+			  color: white !important;
+			}
+			#mail-toolbar-menubar2:-moz-lwtheme {
+			  -moz-appearance: none !important;
+			  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
+			}
+			
+			#messengerWindow:not([sizemode="maximized"]) #tabs-toolbar {
+			  margin-top: 3px !important;
+			}
+
+		}
+	}
+
+}
+
+/*move menubar below tabs for Windows XP, Linux*/
+@media not all and (-moz-os-version: windows-vista) {
+@media not all and (-moz-os-version: windows-win7) {
+@media not all and (-moz-os-version: windows-win8) {
+@media not all and (-moz-os-version: windows-win10) {
+	
+	#mail-toolbar-menubar2 menubar > menu {
+	  -moz-appearance: none !important;
+	}
+	
+	#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
+	  color: black !important;
+	}
+	
+	#mail-toolbar-menubar2 {
+	  -moz-box-ordinal-group: 20 !important;
+	  -moz-window-dragging: unset !important;
+	  border: unset !important;
+	  padding-top: unset !important;
+	  margin-top: unset !important;
+	}
+	
+	#mail-toolbar-menubar2[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+	#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+	  display: -moz-box !important;
+	}
+
+	#messengerWindow[sizemode="maximized"] #tabs-toolbar {
+	  margin-top: -1px !important;
+	}
+
+	#mail-toolbar-menubar2:-moz-lwtheme {
+	  -moz-appearance: none !important;
+	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
+	}
+	
+	#mail-toolbar-menubar2:not(:-moz-lwtheme) {
+	  -moz-appearance: none !important;
+	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),
+				  linear-gradient(-moz-dialog, -moz-dialog) !important;
+	}
+	
+	@media all and (-moz-windows-classic) {
+		
+		#messengerWindow:not([sizemode="maximized"]) #tabs-toolbar {
+		  margin-top: 3px !important;
+		}
+
+	}
+
+}}}}
+
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+	#mail-toolbar-menubar2 {
+	  -moz-appearance: none !important;
+	  -moz-box-ordinal-group: 20 !important;
+	  -moz-window-dragging: unset !important;
+	  border: unset !important;
+	  padding-top: unset !important;
+	  margin-top: unset !important;
+	}
+	
+	#mail-menubar:not(:-moz-lwtheme) > menu {
+	  color: black !important;
+	}
+
+	#mail-toolbar-menubar2[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+	#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+	  display: -moz-box !important;
+	}
+
+	@media all and (-moz-windows-theme: aero) {
+		#mail-toolbar-menubar2 {
+		  padding-bottom: 0px !important;
+		  margin-bottom: 0px !important;
+		}
+	}
+}
+
+
+@media (-moz-os-version:windows-win8) {
+	
+	#mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2:not(:-moz-lwtheme) {
+	  -moz-appearance: none !important;
+	  background: #f9f9fa !important;
+	}
+
+}
+
+@media (-moz-os-version:windows-win10) {
+	
+	#mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2:not(:-moz-lwtheme) {
+	  -moz-appearance: none !important;
+	  background: #f0f0f0 !important;
+	}
+	
+	#messengerWindow[sizemode="normal"] #mail-toolbar-menubar2 {
+	  border-left: 0 !important;
+	  border-right: 0 !important;
+	}
+
+}

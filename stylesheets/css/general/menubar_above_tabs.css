@@ -1,0 +1,92 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#mail-toolbar-menubar2 {
+  -moz-box-ordinal-group: 0 !important;
+  -moz-window-dragging: default !important;
+  background: unset !important;
+  border: unset !important;
+}
+
+/* move menubar above tabs for Windows Vista/7 AeroGlass */
+@media (-moz-os-version: windows-vista), (-moz-os-version: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	@media all and (-moz-windows-glass) {
+
+		#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-window-inactive) #menubar-items {
+		  background-color: rgba(255,255,255,0.5) !important;
+		  border-radius: 6px !important;
+		}
+		
+		#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext):not(:-moz-window-inactive) menubar > menu {
+		  color: inherit !important;
+		  text-shadow: 0 0 3px white, 0 0 3px white !important;
+		}
+		
+		#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext):-moz-window-inactive menubar > menu {
+		  color: inherit !important;
+		  text-shadow: 0 0 3px white !important;
+		}
+		#messengerWindow #calendarTabPanel:-moz-lwtheme {
+		  margin-top: 0px !important;
+		}
+
+		#messengerWindow #titlebar-placeholder-on-TabsToolbar-for-captions-buttons,
+		#messengerWindow[hcp_platformPlus="windows"] #hctp-appmenu-button-placeholder{
+		  display: none !important;
+		}
+
+		#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
+		  -moz-margin-start: -12px !important;
+		}
+
+		#messengerWindow[hcp_platformPlus="windows"] #mail-toolbar-menubar2 {
+		  -moz-margin-start: 150px !important;
+		}
+	
+	}
+    
+  }
+}
+
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+	
+	#mail-toolbar-menubar2 {
+	  -moz-box-ordinal-group: 0 !important;
+	  -moz-window-dragging: default !important;
+	  background: unset !important;
+	  border: unset !important;
+	}
+  
+	#messengerWindow #mail-toolbar-menubar2 {
+	  background: unset !important;
+	}
+	
+	#messengerWindow #calendarTabPanel:-moz-lwtheme {
+	  margin-top: 0px !important;
+	}
+
+	#messengerWindow #titlebar-placeholder-on-TabsToolbar-for-captions-buttons,
+	#messengerWindow[hcp_platformPlus="windows"] #hctp-appmenu-button-placeholder{
+	  display: none !important;
+	}
+
+	#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
+	  -moz-margin-start: -12px !important;
+	}
+
+	#messengerWindow[hcp_platformPlus="windows"] #mail-toolbar-menubar2 {
+	  -moz-margin-start: 150px !important;
+	}
+
+}
+
+
+@media not all and (-moz-os-version:windows-win10) {
+ @media not all and (-moz-os-version:windows-win8) {
+  @media all and (-moz-windows-theme:aero) {
+	#mail-toolbar-menubar2:not(:-moz-lwtheme){
+	  background: unset !important;
+	}
+}}}

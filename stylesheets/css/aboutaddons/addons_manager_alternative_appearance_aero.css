@@ -1,0 +1,20 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./addons_manager_alternative_appearance.css";
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
+				url-prefix(about:addons) {
+
+	#addons-page {
+	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	}
+}
+
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	body > div#main {
+	  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+	}
+}

@@ -1,0 +1,17 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+
+:root {
+  --ctb_maintoolbar_button_height: 0px;
+  --ctb_maintoolbar_button_width: 0px;
+}
+
+.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,
+.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1,
+.chromeclass-toolbar:not(#tabs-toolbar) #button-appmenu {
+	min-height: var(--ctb_maintoolbar_button_height) !important;
+	min-width: var(--ctb_maintoolbar_button_width) !important;
+}

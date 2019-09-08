@@ -1,0 +1,9 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import url("./menubar_below_tabs.css");
+
+#messengerWindow #navigation-toolbox #mail-toolbar-menubar2 {
+  border-bottom: 1px solid ThreeDShadow !important;
+}

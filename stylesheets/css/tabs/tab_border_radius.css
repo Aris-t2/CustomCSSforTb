@@ -1,0 +1,13 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+
+:root {
+  --tabborderradius: 3px;
+}
+
+#messengerWindow #tabs-toolbar .tabmail-tab {
+  border-top-right-radius: var(--tabborderradius) !important;
+  border-top-left-radius: var(--tabborderradius) !important;
+}

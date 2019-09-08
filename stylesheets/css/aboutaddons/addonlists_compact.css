@@ -1,0 +1,26 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.addon *,
+	.addon {
+	  padding: 0 !important;
+	  min-height: unset !important;
+	}
+
+	.addon {
+	  padding-top: 4px !important;
+	  padding-bottom: 4px !important;
+	}
+
+	.advancedinfo-container {
+	  display: none !important;
+	}
+
+	.icon-container .icon {
+	  width: 20px !important;
+	  height: 20px !important;
+	}
+}

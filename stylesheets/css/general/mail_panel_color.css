@@ -1,0 +1,15 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+
+:root {
+  --mailpanel_background_color: #ffffff;
+  --mailpanel_text_color: #000000;
+}
+
+/* mail list background */ 
+:-moz-any(#folderTree, #threadTree) { 
+  background: var(--mailpanel_background_color) !important; 
+  color: var(--mailpanel_text_color) !important; 
+} 

@@ -1,0 +1,13 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+
+:root {
+  --tab-min-height: 26px !important;
+}
+
+#titlebar-buttonbox .titlebar-button {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}

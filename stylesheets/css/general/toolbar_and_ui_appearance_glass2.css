@@ -1,0 +1,127 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import url("./toolbarsui_glass1.css");
+
+@media all and (-moz-windows-compositor) {
+	
+	treecolpicker{
+		-moz-appearance: -moz-win-borderless-glass !important;
+		background: transparent !important;
+	}
+	
+	#messengerBox,
+	#quick-filter-bar-main-bar,#expandedHeadersTopBox,
+	.headerContainer,#expandedHeaderView[show_header_mode="all"],
+	.main-header-area,#remoteContentBar,#junkBar,#phishingBar,
+	#attachmentView,#collapsedHeaderView,#CompactHeader_collapsedHeaderView,
+	#expandedHeaderView, #CompactHeader_expandedHeaderView,	#CardViewBox,#heading,
+	#folderTree, #threadTree,#mailContent,treecol,#messagepanebox,#accountCentralBox,
+	#folderPaneHeader,#messengerWindow tabpanels, #tabpanelcontainer,
+	treecol.threadColumnHeader,#messengerWindow toolbar{
+		-moz-appearance: -moz-win-borderless-glass !important;
+		background: linear-gradient(rgba(255,255,255,.4), rgba(255, 255, 255, .5),rgba(255,255,255,.6))!important;
+	}
+	
+	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
+	  -moz-appearance: none !important;
+	  background: none !important;
+	}
+	
+	#messengerWindow:not(:-moz-lwtheme) #status-bar statusbarpanel,
+	#messengerWindow:not(:-moz-lwtheme) #status-bar .statusbar-resizerpanel,
+	* #unifinder-searchBox,
+	* #task-addition-box,
+	* #calendar-nav-control,
+	* #mail-bar3.chromeclass-toolbar:not(:-moz-lwtheme),
+	* #quick-filter-bar{
+	  background:none !important;
+	}
+
+	@media (-moz-os-version: windows-win10) {
+		#titlebar-min .toolbarbutton-icon,
+		#titlebar-max .toolbarbutton-icon,
+		#titlebar-close:not(:hover) .toolbarbutton-icon{
+		  opacity: 0 !important;
+		}
+	}
+	
+	#messengerWindow tabpanels,
+	#ltnSidebar,.calendar-task-tree,
+	#calendarContent,
+	calendar-list-tree > tree ,
+	#unifinder-search-results-tree,
+	#unifinder-searchBox,
+	#bottom-events-box ,
+	calendar-event-column,
+	calendar-header-container,
+	.multiday-view-label-box[orient="horizontal"] > .multiday-view-label-time-spacer,
+	.multiday-view-header-box[orient="horizontal"] > .multiday-view-header-time-spacer,
+	.calendar-time-bar-label,
+	.calendar-time-bar-box-odd,
+	.calendar-time-bar-box-even ,
+	.calendar-event-column-linebox[weekend="true"] ,
+	.calendar-event-column-linebox[off-time="true"],
+	.calendar-event-column-linebox[orient="vertical"],
+	calendar-multiday-view ,
+	calendar-multiday-view[hidden="true"],
+	calendar-day-label,
+	#calendar-nav-control,
+	calendar-month-view,
+	calendar-multiweek-view,
+	.calendar-month-view-grid-column,
+	.calendar-month-view-grid-row ,
+	calendar-month-day-box ,
+	.calendar-month-day-box-date-label ,
+	calendar-month-day-box-item,
+	#view-deck ,
+	.navigation-bottombox ,
+	minimonth,
+	minimonth-header,
+	.minimonth-month-box,
+	.minimonth-month-name ,
+	.minimonth-month-name-readonly,
+	.minimonth-year-name,
+	.minimonth-year-name-readonly,
+	.minimonth-month-name > .toolbarbutton-text,
+	.minimonth-month-name > .toolbarbutton-icon,
+	.minimonth-year-name > .toolbarbutton-icon ,
+	.minimonth-nav-btns > .toolbarbutton-icon ,
+	.minimonth-nav-btns,
+	.minimonth-nav-btns > .toolbarbutton-text ,
+	.minimonth-nav-btns[disabled],
+	.minimonth-nav-btns:-moz-locale-dir(ltr)[dir="-1"],
+	.minimonth-nav-btns:-moz-locale-dir(rtl)[dir="1"],
+	.minimonth-nav-btns[dir="0"],
+	.minimonth-row-header,
+	.minimonth-day,
+	.minimonth-day[othermonth="true"],
+	.minimonth-day[today="true"],
+	.minimonth-day[selected="true"],
+	.minimonth-day[selected="true"][today="true"],
+	.minimonth-day[busy],
+	.minimonth-day:hover[interactive],
+	.minimonth-day:active[interactive],
+	.minimonth-list,
+	.minimonth-list[current="true"],
+	.minimonth-list:hover ,
+	#task-addition-box,
+	#mini-day-image{
+	  -moz-appearance: -moz-win-borderless-glass !important;
+	  background: none !important;
+	}
+	
+	/* toolbar text */
+	* #mail-menubar:not(:-moz-lwtheme) > menu > label,
+	#messengerWindow toolbar:not(:-moz-lwtheme):not(#tabs-toolbar),
+	menubar > menu:not(:-moz-lwtheme),
+	statusbar:not(:-moz-lwtheme) label,
+	toolbox toolbarbutton:not(:-moz-lwtheme) > label{
+	  color: #FFFFFF !important;
+	  text-shadow: #000000 1px 1px 1.5px !important;
+	}
+
+}

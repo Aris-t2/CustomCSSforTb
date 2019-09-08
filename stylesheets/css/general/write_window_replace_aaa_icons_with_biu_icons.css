@@ -1,0 +1,24 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#boldButton .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 36px, 36px, 0px) !important;
+}
+#italicButton .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 72px, 36px, 36px) !important;
+}
+#underlineButton .toolbarbutton-icon {
+  -moz-image-region: rect(0px, 108px, 36px, 72px) !important;
+}
+
+
+:-moz-any(#boldButton,#italicButton,#underlineButton) .toolbarbutton-icon {
+  list-style-image: url("../../images/bui.png") !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+*:-moz-lwtheme-brighttext :-moz-any(#boldButton,#italicButton,#underlineButton) .toolbarbutton-icon {
+  list-style-image: url("../../images/bui_white.png") !important;
+}

@@ -1,0 +1,18 @@
+/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#messengerWindow #messagepanebox #messagepane,
+#msgNotificationBar{
+  -moz-box-ordinal-group: 20 !important;
+}
+
+#messengerWindow #messagepanebox #FindToolbar,
+#messagepanewrapper {
+  -moz-box-ordinal-group: 21 !important;
+}
+
+#attachmentView {
+  border-top:0 !important;
+  border-bottom: 1px solid #a9b7c9 !important;
+}
