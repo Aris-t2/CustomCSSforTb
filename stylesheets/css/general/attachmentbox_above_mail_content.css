@@ -16,3 +16,11 @@
   border-top:0 !important;
   border-bottom: 1px solid #a9b7c9 !important;
 }
+
+splitter#attachment-splitter[orient="vertical"][collapsed] {
+  display: none;
+}
+ 
+splitter#attachment-splitter[orient="vertical"] {
+  pointer-events: none;
+}
