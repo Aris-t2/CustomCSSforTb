@@ -87,11 +87,20 @@
 #button-appmenu .toolbarbutton-menu-dropmarker {
   display: -moz-box !important;
 }
+
+/*
 #button-appmenu .toolbarbutton-menu-dropmarker::before {
   display: -moz-box !important; 
   content: var(--appbuttonlabel) !important;
   -moz-padding-end: 4px !important;
+}*/
+
+#button-appmenu::after {
+  display: -moz-box !important; 
+  content: var(--appbuttonlabel) !important;
+  -moz-margin-start: -18px !important;
 }
+
 #button-appmenu .toolbarbutton-text {
   display: none !important;
 }
@@ -99,10 +108,10 @@
 #button-appmenu .toolbarbutton-icon {
   opacity: 0 !important;
 }
-
+/*
 #button-appmenu .toolbarbutton-menu-dropmarker::before {
   -moz-margin-start: -20px !important;
-}
+}*/
 
 #tabbar-toolbar {
   margin-bottom: 1px !important;

@@ -4,8 +4,8 @@
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* Custom CSS for Thunderbird 68+ ***************************************************************/
-/* version 1.0.2 ********************************************************************************/
+/* Custom CSS for Thunderbird 68+  (pre-configured for Thunderbird 78+) *************************/
+/* version 1.1.0 ********************************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -114,6 +114,7 @@
 /* @import "./css/general/toolbar_and_ui_appearance_glass1.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass2.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass3.css"; /**/
+@import "./css/general/toolbar_and_ui_appearance_lwtheme_extra.css"; /**/
 
 /* Attachmentbox *********************************************************************************/
 @import "./css/general/attachmentbox_above_mail_content.css"; /**/
@@ -123,6 +124,7 @@
 /* @import "./css/general/window_header_colors.css"; /**/
 /* @import "./css/general/mail_panel_color.css"; /**/
 /* @import "./css/general/increase_row_height.css"; /**/
+/* @import "./css/general/transparent_mail_header.css"; /**/
 
 /* Tree columns appearance - [only use one at a time] ********************************************/
 /* @import "./css/general/tree_columns_appearance.css"; /**/
@@ -151,11 +153,18 @@
 /* @import "./css/general/mail_tree_folder_icons_hidden.css"; /**/
 /* @import "./css/general/mail_list_scrollbars_hidden.css"; /**/
 
+/* Icon sets for folder area - [only use one at a time] *****************************************/
+/* [!] not recommended for Thunderbird 78+ */
+/* @import "./css/general/foldericons_tb1.css"; /**/
+/* @import "./css/general/foldericons_tb2.css"; /**/
+/* @import "./css/general/foldericons_tb3.css"; /**/
+/* @import "./css/general/foldericons_tb3_strata.css"; /**/
+
 
 /************************************************************************************************/
 /************************************************************************************************/
 /* Create a new file "my_userChrome.css" and add own/custom code to it. *************************/
-/* @import "./my_userChrome.css"; /**/
+@import "./my_userChrome.css"; /**/
 /************************************************************************************************/
 /************************************************************************************************/
 /************************************************************************************************/

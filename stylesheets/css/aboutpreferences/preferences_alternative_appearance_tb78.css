@@ -1,76 +1,148 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
-/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
-
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
 
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 
-	.category,#pref-category-box radio {
+	.category {
 	  margin-inline-start: 0px !important;
 	  padding-inline-end: 0px !important;
 	}
 
- 	page,
-	.dialogBox .groupbox-title {
-	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
-	}
-
-	#prefBox,
-	#categories,#pref-category-box {
-	  background: transparent !important;
+ 	#preferences-stack,.sticky-container,
+	page,
+	.dialogBox .groupbox-title,
+	#pref-category-box,
+	#categories	{
+	  /*background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;*/
+	  background: -moz-Dialog !important;
 	}
 	
-	#preferencesContainer,
+	#preferencesContainer {
+	  padding: unset !important;
+	}
+	
+	#preferencesContainer .paneDeckContainer #paneDeck {
+	  padding: 0 28px !important;
+	}
+	
+	.paneDeckContainer{
+	  width: 100vw !important;
+	}
+	
 	.groupbox-body,
 	#dialogFrame{
 	  background-color: white !important;
 	}
 	
+	.main-content {
+	  padding: 0px !important;
+	}
+
+	.pane-container {
+	  width: 100vw !important;
+	  padding: 0px !important;
+	  margin: 0px !important;
+	}
+	
+	.sticky-container,
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	#categories {
+	  padding: 0 !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: 0px !important;
+	  margin: 0 5px 5px 5px!important;
+	}
+
+	#policies-container {
+	  background: transparent !important;
+	}
+	
+	#searchInput[focused] {
+	  box-shadow: unset !important;
+	}
+	
 	.sticky-container,
 	.search-container {
-	  background: transparent !important;
+	  /*background: transparent !important;
 	  position: absolute !important;
-	  top: 20px !important;
+	  display:block !important;
+	  top: 20px !important;*/
+	  /*margin-top: -20px !important;
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  max-width: unset !important;*/
 	}
 	
 	.header-name {
 	  visibility: collapse !important;
 	}
 	
+	#firefoxAccountCategory {
+	  visibility: hidden !important;
+	}
+	
 	/* main colors category items */
-	#categories .category[selected],
-	#pref-category-box radio[selected] {
+	#categories .category[selected]{
 	  background-color: white !important;
 	  color: black !important;
 	}
 
-	#categories .category:not([selected]):hover,
-	#pref-category-box radio:not([selected]):hover {
+	#categories .category:not([selected]):hover{
 	  background-color: Highlight !important;
 	  color: HighlightText !important;
 	}
 
-	#categories .category:not([selected]):not(:hover),
-	#pref-category-box radio:not([selected]):not(:hover){
+	#categories .category:not([selected]):not(:hover){
 	  color: black !important;
 	}
-	#categories .category,
-	#pref-category-box radio {
+	#categories .category {
 	  transition-duration: unset !important;
 	}
 	
-	/* category icons */
-	#pref-category-box radio > image, 
-	#categories .category .category-icon {
-	  height: 32px !important;
-	  width: 32px !important;
+	/* category icons */	
+	#MailPreferences #category-general .category-icon {
+	  fill: #8b8b8b !important;
+	}
+	#MailPreferences #category-compose .category-icon {
+	  fill: #8aa8cc !important;
+	}
+	#MailPreferences #category-privacy .category-icon {
+	  fill: purple !important;
+	}
+	#MailPreferences #category-chat .category-icon {
+	  fill: orange !important;
+	}
+	#MailPreferences #category-calendar .category-icon {
+	  fill: red !important;
+	}
+	
+	#MailPreferences .sidebar-footer-button #addonsButton image{
+	  fill: green !important;
 	}
 
+
+	#MailPreferences .sidebar-footer-button #addonsButton:hover image,
+	#MailPreferences .category:not([selected="true"]):hover .category-icon {
+	  filter: brightness(2.00) !important;
+	}
 	/* alignment and text/font appearance */
 
 	#mainPrefPane {
 	  color: black !important;
-	  -moz-padding-start: 20px !important;
-	  margin-top: -35px !important;
+	  -moz-padding-start: 30px !important;
+	  margin-top: 4px !important;
 	  -moz-margin-start: -20px !important;
 	}
 	
@@ -80,7 +152,7 @@
 	}
 
 	.main-content {
-	  margin-top: 20px !important;
+	  margin-top: 4px !important;
 	  margin-bottom: 20px !important;
 	  background-color: white !important;
 	  -moz-margin-start: -1px !important;
@@ -126,7 +198,7 @@
 	}
 	
 	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
-	  padding:0px !important;
+	  padding: 2px !important;
 	}
 	menulist{
 	  padding:2px !important;
@@ -137,7 +209,7 @@
 	radio image {
 	  width: 14px !important;
 	  height: 14px !important;
-	  margin: 0 !important;
+	  margin: 0 1px !important;
 	}
 	
 	/*checkbox label,

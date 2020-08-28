@@ -2,9 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
-
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	#categories .category[name="recent-updates"][disabled],
 	#category-recentUpdates[disabled] {
 	  overflow: visible !important;
 	  height: 48px !important;
@@ -15,6 +14,7 @@
 	  -moz-user-input: unset !important;
 	}
 	
+	#categories .category[name="recent-updates"][hidden],
 	#category-recentUpdates[hidden] {
 	  opacity: 1 !important;
 	  min-height: 48px !important;

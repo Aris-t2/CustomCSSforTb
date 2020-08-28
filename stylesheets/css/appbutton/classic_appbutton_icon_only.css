@@ -4,6 +4,7 @@
 
 @import "./classic_appbutton.css";
 
+#button-appmenu::after,
 #button-appmenu .toolbarbutton-menu-dropmarker,
 #button-appmenu .toolbarbutton-menu-dropmarker::before,
 #button-appmenu .toolbarbutton-text {

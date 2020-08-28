@@ -146,6 +146,10 @@
 		  margin-bottom: 0px !important;
 		}
 	}
+	
+	#messengerWindow:-moz-lwtheme #mail-toolbar-menubar2 {
+	  background-color: var(--toolbar-bgcolor) !important;
+	}
 }
 
 

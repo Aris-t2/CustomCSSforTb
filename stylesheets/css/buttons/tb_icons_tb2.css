@@ -206,16 +206,3 @@
 	  background-position: -54px top !important;
 	}
 	*/
-	/* folder icons */
-	.tabmail-tab[type="folder"][SpecialFolder="Inbox"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox),
-	.tabmail-tab[type="folder"][SpecialFolder="Sent"] .tab-icon-image,
-	treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent),
-	.tabmail-tab[type="folder"][SpecialFolder="Outbox"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox),
-	.tabmail-tab[type="folder"][SpecialFolder="Drafts"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts),
-	.tabmail-tab[type="folder"][SpecialFolder="Templates"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Templates),
-	.tabmail-tab[type="folder"][SpecialFolder="Junk"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk),
-	.tabmail-tab[type="folder"][SpecialFolder="Trash"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash),
-	.tabmail-tab[type="folder"][SpecialFolder="Archive"] .tab-icon-image, treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive),
-	treechildren::-moz-tree-image(folderNameCol, imapShared-true) {
-	  list-style-image: url("../../images/tb_folder_tb2.png") !important;
-	}
