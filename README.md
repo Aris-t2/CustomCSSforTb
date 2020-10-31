@@ -20,9 +20,17 @@
 
 ## Where to find Thunderbird profile folder? The correct location for user styles.
 
-**1.** Find your profile folder ('profile names are different for everyone').  
-`about:support > Profile Folder > Open Folder`  
-or `about:profiles > Root Directory > Open Folder`  
+**1.** Find your profile folder  
+**Windows**  
+`C:\Users\ USERNAME \AppData\Roaming\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
+Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Mozilla\Thunderbird\Profiles\` from explorers location bar.  
+**Linux**  
+`/home/ username /.mozilla/thunderbird/ profile folder name /`  
+Hidden files must be visible to see `.mozilla` folder.  
+**Mac OS X**  
+`~\Library\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \` or  
+`~\Library\Application Support\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
+`\Users\ USERNAME \Library\Application\Support\Thunderbird\Profiles\`  
 
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
 `\ PROFILE FOLDER NAME \chrome\`  
@@ -34,17 +42,6 @@ or `about:profiles > Root Directory > Open Folder`
 `\chrome\userChrome.css`  
 `\chrome\userContent.css`  
 
-(Optional) Profile folders location on drive:  
-**Windows**  
-`C:\Users\ USERNAME \AppData\Roaming\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
-Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Mozilla\Thunderbird\Profiles\` from explorers location bar.  
-**Linux**  
-`/home/ username /.mozilla/thunderbird/ profile folder name /`  
-Hidden files must be visible to see `.mozilla` folder.  
-**Mac OS X**  
-`~\Library\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \` or  
-`~\Library\Application Support\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
-`\Users\ USERNAME \Library\Application\Support\Thunderbird\Profiles\`  
 
 ## How to use custom user styles?
 
