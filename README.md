@@ -22,14 +22,14 @@
 
 **1.** Find your profile folder  
 **Windows**  
-`C:\Users\ USERNAME \AppData\Roaming\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
-Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Mozilla\Thunderbird\Profiles\` from explorers location bar.  
+`C:\Users\ USERNAME \AppData\Roaming\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
+Hidden files must be visible to see `AppData` folder. Alternatively open `%APPDATA%\Thunderbird\Profiles\` from explorers location bar.  
 **Linux**  
-`/home/ username /.mozilla/thunderbird/ profile folder name /`  
+`/home/ username /.thunderbird/ profile folder name /`  
 Hidden files must be visible to see `.mozilla` folder.  
 **Mac OS X**  
-`~\Library\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \` or  
-`~\Library\Application Support\Mozilla\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
+`~\Library\Thunderbird\Profiles\ PROFILE FOLDER NAME \` or  
+`~\Library\Application Support\Thunderbird\Profiles\ PROFILE FOLDER NAME \`  
 `\Users\ USERNAME \Library\Application\Support\Thunderbird\Profiles\`  
 
 **2.** User styles belong into `\chrome\` folder. Create it, if there is none yet. It should look like this afterwards:  
