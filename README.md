@@ -1,4 +1,4 @@
-## Downloads for Thunderbird Quantum (68+)
+## Downloads for Thunderbird
 
 **[CustomCSSforTb releases & changelog](https://github.com/Aris-t2/CustomCSSforTb/releases)**  
 
@@ -8,12 +8,12 @@
 
 ## Instructions / Howto / Readme
 
-- [Unlock custom CSS usage in Thunderbird 69 and newer](#unlock-custom-css-usage-in-thunderbird-69-and-newer)
+- [Unlock custom CSS usage in Thunderbird](#unlock-custom-css-usage-in-thunderbird)
 - [Where to find Thundebird profile folder? The correct location for user styles.](#where-to-find-thunderbird-profile-folder-the-correct-location-for-user-styles)  
 - [How to use custom user styles?](#how-to-use-custom-user-styles)  
 - [How to find item ids and attributes?](#how-to-find-item-ids-and-attributes)  
 
-## Unlock custom CSS usage in Thunderbird 69 and newer
+## Unlock custom CSS usage in Thunderbird
 
 `Settings/Options` > `Advanced` > `General` > `Config Editor...`    
 `toolkit.legacyUserProfileCustomizations.stylesheets` > `true`  
@@ -57,7 +57,7 @@ If "classic button appearance for navigation toolbar buttons" should be <u>disab
 `/* @import "./css/buttons/ctb_on_main_toolbars.css"; /**/`  
 
 Note  
-Code between `/*` and `*/` won't be used by Thunderbird unless there are other `/*` or `*/` inbetween.  
+Code between `/*` and `*/` won't be used by Thunderbird unless there are other `/*` or `*/` in-between.  
 
 ## How to find item ids and attributes?
 
