@@ -1,15 +1,15 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
 #tabbar-toolbar {
   -moz-box-ordinal-group: 0 !important;
-  -moz-padding-end: 1px !important;
+  padding-inline-end: 1px !important;
 }
 
 :root[tabsintitlebar][sizemode=normal] #navigation-toolbox #tabs-toolbar,
 :root[tabsintitlebar][sizemode=maximized] #navigation-toolbox #tabs-toolbar {
-  -moz-padding-start: 0px !important;
+  padding-inline-start: 0px !important;
 }
 
 @media all and (-moz-windows-classic) {
@@ -19,5 +19,5 @@
 }
 
 #tabbar-toolbar {
-  -moz-padding-start: 0px !important;
+  padding-inline-start: 0px !important;
 }

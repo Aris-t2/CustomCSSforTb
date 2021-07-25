@@ -1,10 +1,11 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-#messengerWindow:-moz-lwtheme :-moz-any(#qfb-qs-textbox,#messengerBox) {
+#messengerWindow:-moz-lwtheme :is(#qfb-qs-textbox,#messengerBox) {
   background-color: var(--toolbar-bgcolor) !important;
 }
+
 /*
 #messengerWindow:-moz-lwtheme #msgHeaderView {
   background-color: var(--toolbar-bgcolor) !important;

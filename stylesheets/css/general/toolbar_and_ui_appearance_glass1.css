@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -9,7 +9,7 @@
 	}
 
 	#messengerWindow statusbar{
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent !important;
 	}
 
@@ -18,7 +18,7 @@
 	}
 	
 	menubar{
-		-moz-appearance: -moz-win-glass !important;
+		appearance: -moz-win-glass !important;
 		background-color: transparent !important;
 	}
 	
@@ -32,7 +32,7 @@
 	bookmarks-tree tree,#history-panel,#aios-toolbar,toolbox,#vertical-toolbar{
 		background:none !important;
 		border:0 !important;
-		-moz-appearance: none !important;
+		appearance: none !important;
 	}
 
 	textbox#urlbar, .searchbar-textbox{
@@ -48,7 +48,7 @@
 	}
 
 	tooltip {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		border: none !important;
 		text-shadow: #000000 2px 2px 2px !important;
 		color: #FFFFFF !important;
@@ -57,7 +57,7 @@
 	}
 
 	.statuspanel-label {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		text-shadow: #000000 2px 2px 2px !important;
 		color: #FFFFFF !important;
 		background: rgba(0,0,0,0.6) !important;
@@ -65,13 +65,13 @@
 	}	
 	
 	groupbox{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: linear-gradient(rgba(255,255,255,.5), rgba(255, 255, 255, .6),rgba(255,255,255,.7))!important;
 		border: 1px solid rgba(255,255,255,.6) !important;
 	}
 
 	caption{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: linear-gradient(rgba(255,255,255,.7), rgba(255, 255, 255, .8),rgba(255,255,255,.9))!important;
 		border-radius: 3px !important;
 		border: 1px solid rgba(255,255,255,.6) !important;
@@ -81,7 +81,7 @@
 	#SignonViewerDialog,#rejectedsites,
 	dialog tabpanels,prefwindow tabpanels,
 	prefwindow,prefpane,dialog,richlistbox:not(#categories){
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: linear-gradient(rgba(255,255,255,.4), rgba(255, 255, 255, .5),rgba(255,255,255,.6))!important;
 	}
 
@@ -96,7 +96,7 @@
 	}
 
 	radiogroup,toolbar:not(:-moz-lwtheme),#browser-bottombox:not(:-moz-lwtheme){
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: none !important;
 		border: none !important;
 	}
@@ -106,7 +106,7 @@
 	}
 
 	tab:not(.tabmail-tab){
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: linear-gradient(rgba(255,255,255,.2), rgba(255, 255, 255, .4),rgba(255,255,255,.7))!important;
 		border: 1px solid rgba(255,255,255,.4) !important;
 		border-radius: 3px !important;
@@ -129,7 +129,7 @@
 		background-color: RGBa(255,255,127,.1) !important;}
 
 	notification {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background-color: RGBa(255,255,127,.5) !important;
 		background-image: url("chrome://mozapps/skin/extensions/stripes-warning.png") !important;
 		background-repeat: repeat-x !important;
@@ -165,7 +165,7 @@
 	#placesView, window:not(:-moz-lwtheme), #bookmarksPanel, #defaultView,
 	#placeContent, #placesMenu, #placesList, #placesToolbox, #placesToolbar,
 	#searchModifiers, #infoPaneBox{
-		-moz-appearance: -moz-win-glass !important; 
+		appearance: -moz-win-glass !important; 
 		background: rgba(184,194,196, .1) !important;
 	}
 
@@ -176,12 +176,12 @@
 	}
 
 	.menu-iconic{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		text-shadow: 0px 0px 6px white, 0px 0px 8px white !important;
 	}
 
 	treecol{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: rgba(165,177,192, 0.1) !important; 
 		outline: 0 none !important;
 		border: 0 none !important;
@@ -197,7 +197,7 @@
 	}
 
 	#placesView splitter{ 
-		-moz-appearance: none !important;
+		appearance: none !important;
 		width: 8px !important; 
 		margin-top: 30px !important;
 		background: transparent !important; 
@@ -205,7 +205,7 @@
 	}
 
 	#placeContent scrollbar, #placesList scrollbar{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: transparent !important;
 	}
 
@@ -216,15 +216,15 @@
 	/*#About Dialog*/
 	#aboutDialogContainer #clientBox,
 	#aboutDialog #bottomBox{
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent !important;
 	}
 	#aboutDialog{
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent url("chrome://branding/content/about-logo.png") 7% 26% no-repeat !important;
 	}
 	#aboutDialogContainer {
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent !important;
 	}
 	#aboutDialogContainer,
@@ -240,7 +240,7 @@
 	/* download manager*/
 	#downloadManager{
 		background-color: rgba(255, 0, 0, 0.0) !important;
-		-moz-appearance: -moz-win-glass !important;
+		appearance: -moz-win-glass !important;
 	}
 
 	#downloadView{
@@ -252,7 +252,7 @@
 	}
 
 	richlistbox#downloadView richlistitem {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		border: solid 1px rgb(120, 120, 120) !important;
 		border-radius: 6px !important;
 		margin-left: 6px !important;
@@ -307,7 +307,7 @@
 	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: none !important;
 	}
 	
@@ -334,7 +334,7 @@
 	table,#calendar-panel,#imip-bar,#calMinimonthBox,
 	#today-splitter,#calendar-status-todaypane-button,
 	#calsidebar_splitter,#calMinimonthBox{
-	  -moz-appearance: -moz-win-borderless-glass !important;
+	  appearance: -moz-win-borderless-glass !important;
 	  background: none !important;
 	}
 	

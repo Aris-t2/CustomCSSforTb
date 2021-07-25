@@ -1,8 +1,8 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
 treechildren::-moz-tree-image(folderNameCol) {
   opacity: 0 !important;
-  -moz-margin-end: -16px !important;
+  margin-inline-end: -16px !important;
 }

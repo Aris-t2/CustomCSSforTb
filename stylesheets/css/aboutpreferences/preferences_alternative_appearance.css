@@ -1,138 +1,330 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userContent.css tweaks ***********************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-#MailPreferences {
-  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
-}
+@-moz-document url(about:preferences),url-prefix(about:preferences){
 
-
-#preferencesContainer,
-.groupbox-body,
-#dialogFrame,
-#MailPreferences #preferencesContainer,
-#MailPreferences .paneDeckContainer{
-  background: white !important;
-}
-
-#prefBox,
-#categories,#pref-category-box,
-#MailPreferences #category-box{
-  background: transparent !important;
-}
-
-#MailPreferences #category-box radio {
-  margin-inline-start: 0px !important;
-}
-
-/* main colors category items */
-#MailPreferences #category-box radio[selected]{
-  background-color: white !important;
-  color: black !important;
-}
-
-#MailPreferences #category-box radio:not([selected]):hover{
-  background-color: Highlight !important;
-  color: HighlightText !important;
-}
-
-#MailPreferences #category-box radio:not([selected]):not(:hover){
-  color: black !important;
-}
-
-/* tweaks for small windows */
-@media (max-width: 830px) {
-  
-  #MailPreferences #category-box radio {
-	padding-inline-start: 10px !important;
-	margin-inline-end: 0px !important;
-  }
-
-}
-
-
-	/* main colors category items */
-	#categories .category[selected],
-	#pref-category-box radio[selected] {
-	  background-color: white !important;
-	  color: black !important;
-	}
-
-	#categories .category:not([selected]):hover,
-	#pref-category-box radio:not([selected]):hover {
-	  background-color: Highlight !important;
-	  color: HighlightText !important;
-	}
-
-	#categories .category:not([selected]):not(:hover),
-	#pref-category-box radio:not([selected]):not(:hover){
-	  color: black !important;
-	}
-	#categories .category,
-	#pref-category-box radio {
-	  transition-duration: unset !important;
-	}
-	
-	/* category icons */
-	#pref-category-box radio > image, 
-	#categories .category .category-icon {
-	  height: 32px !important;
-	  width: 32px !important;
-	}
-	
-	.category,#pref-category-box radio {
+	.category {
 	  margin-inline-start: 0px !important;
 	  padding-inline-end: 0px !important;
 	}
 
-/* colorize category icons */
-#MailPreferences radio[pane="paneCompose"] image {
-  fill: #8aa8cc !important;
+ 	#preferences-stack,.sticky-container,
+	page,
+	.dialogBox .groupbox-title,
+	#pref-category-box,
+	#categories	{
+	  background: -moz-Dialog !important;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		#preferences-stack,.sticky-container,
+		page,
+		.dialogBox .groupbox-title,
+		#pref-category-box,
+		#categories	{
+		    background: #18181a !important;
+			color: white !important;
+		}
+	}
+	
+	#preferencesContainer {
+	  padding: unset !important;
+	}
+	
+	#preferencesContainer .paneDeckContainer #paneDeck {
+	  padding: 0 28px !important;
+	}
+	
+	.paneDeckContainer{
+	  width: 100vw !important;
+	}
+	
+	.groupbox-body,
+	#dialogFrame{
+	  background-color: white !important;
+	}
+	
+	.main-content {
+	  padding: 0px !important;
+	}
+
+	.pane-container {
+	  width: 100vw !important;
+	  padding: 0px !important;
+	  margin: 0px !important;
+	}
+	
+	.sticky-container,
+	.search-container  {
+	  width: 100% !important;
+	  margin-inline: 0px !important;
+	  padding-inline: 0px !important;
+	  min-height: unset !important;
+	  height: unset !important;
+	}
+	
+	#categories {
+	  padding: 0 !important;
+	}
+	
+	#policies-container, #searchInput {
+	  min-height: 0px !important;
+	  margin: 0 5px 5px 5px!important;
+	}
+
+	#policies-container {
+	  background: transparent !important;
+	}
+	
+	#searchInput[focused] {
+	  box-shadow: unset !important;
+	}
+	
+	.sticky-container,
+	.search-container {
+	  /*background: transparent !important;
+	  position: absolute !important;
+	  display:block !important;
+	  top: 20px !important;*/
+	  /*margin-top: -20px !important;
+	  margin-inline-start: 0px !important;
+	  padding-inline-end: 0px !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  max-width: unset !important;*/
+	}
+	
+	.header-name {
+	  visibility: collapse !important;
+	}
+	
+	#firefoxAccountCategory {
+	  visibility: hidden !important;
+	}
+	
+	/* main colors category items */
+	#categories .category[selected]{
+	  background-color: white !important;
+	  color: black !important;
+	}
+
+	#categories .category:not([selected]):hover{
+	  background-color: Highlight !important;
+	  color: HighlightText !important;
+	}
+
+	#categories .category:not([selected]):not(:hover){
+	  color: black !important;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		#categories .category:not([selected]):not(:hover){
+		  color: white !important;
+		}
+	}
+	
+	#categories .category {
+	  transition-duration: unset !important;
+	}
+	
+	/* category icons */	
+	#MailPreferences #category-general .category-icon {
+	  fill: #8b8b8b !important;
+	}
+	#MailPreferences #category-compose .category-icon {
+	  fill: #8aa8cc !important;
+	}
+	#MailPreferences #category-privacy .category-icon {
+	  fill: purple !important;
+	}
+	#MailPreferences #category-chat .category-icon {
+	  fill: orange !important;
+	}
+	#MailPreferences #category-calendar .category-icon {
+	  fill: red !important;
+	}
+	
+	#MailPreferences .sidebar-footer-button #addonsButton image{
+	  fill: green !important;
+	}
+
+
+	#MailPreferences .sidebar-footer-button #addonsButton:hover image,
+	#MailPreferences .category:not([selected="true"]):hover .category-icon {
+	  filter: brightness(2.00) !important;
+	}
+	
+	/* alignment and text/font appearance */
+
+	#mainPrefPane {
+	  color: black !important;
+	  padding-inline-start: 30px !important;
+	  margin-top: 4px !important;
+	  margin-inline-start: -20px !important;
+	}
+	
+	textbox {
+	  min-height: 24px !important;
+	  height: 24px !important;
+	}
+
+	.main-content {
+	  margin-top: 4px !important;
+	  margin-bottom: 20px !important;
+	  background-color: white !important;
+	  margin-inline-start: -1px !important;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.main-content {
+		  background-color: black !important;
+		}
+	}
+
+	.header label {
+	  font-weight: bold !important;
+	  padding-bottom: 0 !important;
+	}
+
+	.header:not(#header-advanced){
+	  margin-bottom: 0px !important;
+	}
+
+	#advancedPrefs #tabsElement tab {
+	  min-height: 30px !important;
+	}	
+
+	/* treechildren*/
+	#handlersView richlistitem,
+	#engineList treechildren::-moz-tree-row,
+	#blocklistsTree treechildren::-moz-tree-row {
+	  min-height: 24px !important;
+	}
+	
+	treecols,
+	treecol {
+	  min-height: unset !important;
+	  height: 24px !important;
+	}
+	
+	.autocomplete-tree treecols,
+	.autocomplete-tree treecol {
+	  height: unset !important;
+	}
+
+	/* buttons / menulists */
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle),
+	menulist{
+	  min-height: unset !important;
+	  height: unset !important;
+	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+	}
+	
+	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
+	  padding: 2px !important;
+	}
+	menulist{
+	  padding:2px !important;
+	}
+	
+	/* checkbox and radio items */
+	checkbox image,
+	radio image {
+	  width: 14px !important;
+	  height: 14px !important;
+	  margin: 0 1px !important;
+	}
+	
+	/*checkbox label,
+	radio label {
+	  margin-inline-start: -10px !important;
+	}*/
+	
+	#homeContentsGroup checkbox label {
+	  margin-inline-start: 2px !important;
+	}
+	
+	radio *{
+	  outline: unset !important;
+	}
+	
+	/* tweaks for small windows */
+	@media (max-width: 830px) {
+	  
+	  .category {
+		padding-inline-start: 10px !important;
+		margin-inline-end: 0px !important;
+	  }
+
+	  .main-content {
+		padding-left: 28px !important;
+		padding-right: 28px !important;
+	  }
+
+	}
+	
+	.sidebar-footer-button .text-link {
+	  margin-inline-start: 0 !important;
+	}
+	
 }
 
-#MailPreferences radio[pane="paneLightning"] image,
-#MailPreferences radio[pane="paneGeneral"] image {
-  fill: #8b8b8b !important;
-}
+/* preference sub windows */
 
-#MailPreferences radio[pane="paneChat"] image {
-  fill: #63c54f !important;
-}
-
-#MailPreferences radio[pane="paneDisplay"] image {
-  fill: #ffba2f !important;
-}
-
-#MailPreferences radio[pane="category-plugin"] image {
-  fill: #2b63c1 !important;
-}
-
-#MailPreferences radio[pane="panePrivacy"] image {
-  fill: purple !important;
-}
-
-#MailPreferences radio[pane="paneSecurity"] image {
-  fill: red !important;
-}
-
-#MailPreferences radio[pane="paneAdvanced"] image {
-  fill: orange !important;
-}
-
-#MailPreferences radio[pane="paneApplications"] image {
-  fill: #b99c16 !important;
-}
-
-#MailPreferences radio[pane]:not([selected="true"]):hover image {
-  filter: brightness(2.00) !important;
-}
-
-#MailPreferences radio[pane] {
-  transition: 0.01ms !important;
-}
-
-/* buttons / menulists */
-#MailPreferences button,
-#MailPreferences menulist{
+*[subdialog="true"] button:not(.button-link),
+*[subdialog="true"] menulist{
+  min-height: unset !important;
+  height: unset !important;
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
+}
+
+*[subdialog="true"] button:not(.button-link):not(.close-icon){
+  padding:0px !important;
+}
+*[subdialog="true"] menulist{
+  padding:2px !important;
+}
+
+*[subdialog="true"] checkbox image,
+*[subdialog="true"] radio image {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important;
+}
+
+/**[subdialog="true"] checkbox label,
+*[subdialog="true"] radio label {
+  margin-inline-start: -10px !important;
+}*/
+
+*[subdialog="true"] radio *{
+  outline: unset !important;
+}
+
+*[subdialog="true"] > vbox,
+*[subdialog="true"] > hbox,
+*[subdialog="true"] .prefWindow-dlgbuttons,
+*[subdialog="true"] prefpane,
+*[subdialog="true"] .contentPane,
+*[subdialog="true"] .dialog-content-box,
+*[subdialog="true"] .largeDialogContainer{
+  background-color: white !important;
+  color: black !important;
+}
+
+*[subdialog="true"] textbox {
+  min-height: 24px !important;
+  height: 24px !important;
+}
+
+*[subdialog="true"] treecols,
+*[subdialog="true"] treecol {
+  min-height: unset !important;
+  height: 26px !important;
+}
+
+*[subdialog="true"] .autocomplete-tree treecols,
+*[subdialog="true"] .autocomplete-tree treecol {
+  height: unset !important;
 }

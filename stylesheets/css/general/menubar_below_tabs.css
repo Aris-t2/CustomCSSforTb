@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -45,10 +45,10 @@
 		@media all and (-moz-windows-classic) {
 			
 			#mail-toolbar-menubar2 menubar > menu {
-			  -moz-appearance: none !important;
+			  appearance: none !important;
 			}
 			
-			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) toolbarbutton > :-moz-any(label,description),
+			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) toolbarbutton > :is(label,description),
 			#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
 			  color: black !important;
 			}
@@ -56,7 +56,7 @@
 			  color: white !important;
 			}
 			#mail-toolbar-menubar2:-moz-lwtheme {
-			  -moz-appearance: none !important;
+			  appearance: none !important;
 			  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
 			}
 			
@@ -76,7 +76,7 @@
 @media not all and (-moz-os-version: windows-win10) {
 	
 	#mail-toolbar-menubar2 menubar > menu {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	}
 	
 	#mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
@@ -101,12 +101,12 @@
 	}
 
 	#mail-toolbar-menubar2:-moz-lwtheme {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
 	}
 	
 	#mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),
 				  linear-gradient(-moz-dialog, -moz-dialog) !important;
 	}
@@ -123,7 +123,7 @@
 
 @media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
 	#mail-toolbar-menubar2 {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  -moz-box-ordinal-group: 20 !important;
 	  -moz-window-dragging: unset !important;
 	  border: unset !important;
@@ -157,7 +157,7 @@
 	
 	#mail-bar3:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: #f9f9fa !important;
 	}
 
@@ -167,7 +167,7 @@
 	
 	#mail-bar3:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: #f0f0f0 !important;
 	}
 	

@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -7,7 +7,7 @@
 @media all and (-moz-windows-compositor) {
 	
 	treecolpicker{
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent !important;
 	}
 	
@@ -20,14 +20,14 @@
 	#folderTree, #threadTree,#mailContent,treecol,#messagepanebox,#accountCentralBox,
 	#folderPaneHeader,#messengerWindow tabpanels, #tabpanelcontainer,
 	treecol.threadColumnHeader,#messengerWindow toolbar{
-		-moz-appearance: -moz-win-borderless-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: linear-gradient(rgba(255,255,255,.4), rgba(255, 255, 255, .5),rgba(255,255,255,.6))!important;
 	}
 	
 	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: none !important;
 	}
 	
@@ -110,7 +110,7 @@
 	.minimonth-list:hover ,
 	#task-addition-box,
 	#mini-day-image{
-	  -moz-appearance: -moz-win-borderless-glass !important;
+	  appearance: -moz-win-borderless-glass !important;
 	  background: none !important;
 	}
 	

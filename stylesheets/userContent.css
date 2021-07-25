@@ -1,10 +1,10 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userContent.css tweaks ***********************************************************/
 /* code mostly taken from 'CusomizeMyBird' add-ons **********************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 /************************************************************************************************/
 
 /************************************************************************************************/
-/* Custom CSS for Thunderbird 68+  (pre-configured for Thunderbird 78+) *************************/
+/* Custom CSS for Thunderbird *******************************************************************/
 /************************************************************************************************/
 
 /*************************************************************************************************
@@ -42,25 +42,23 @@
 /* ADDON MANAGER (about:addons) *****************************************************************/
 
 /* Addon manager alternative appearance - [only use one at a time] ******************************/
-/* @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
+@import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
 /* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/
-@import "./css/aboutaddons/addons_manager_alternative_appearance_tb78.css"; /**/
-/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero_tb78.css"; /**/
+
 
 /* Compact addon manager alternative appearance - [only use one at a time] **********************/
 /* @import "./css/aboutaddons/addonlists_compact.css"; /**/
 /* @import "./css/aboutaddons/addonlists_compact_more_compact.css"; /**/
-/* @import "./css/aboutaddons/addonlists_compact_tb78.css"; /**/
-/* @import "./css/aboutaddons/addonlists_compact_more_compact_tb78.css"; /**/
 
+@import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
+
+/* Show version number after add-on name ********************************************************/
 @import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
 
 
 /* PREFERENCES (about:preferences) **************************************************************/
-/* @import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
 /* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/
-@import "./css/aboutpreferences/preferences_alternative_appearance_tb78.css"; /**/
-/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero_tb78.css"; /**/
 
 
 /************************************************************************************************/

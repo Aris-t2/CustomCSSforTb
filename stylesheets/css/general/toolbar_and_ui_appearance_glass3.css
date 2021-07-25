@@ -1,11 +1,11 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
 @media all and (-moz-windows-compositor) {
 
   #messengerWindow{
-	-moz-appearance: -moz-win-borderless-glass !important;    
+	appearance: -moz-win-borderless-glass !important;    
 	background: transparent linear-gradient(to bottom, rgba(255,255,255,.1) 0px, rgba(255, 255, 255, .5) 30px ,rgba(255,255,255,.9)) !important;
   }
 
@@ -24,7 +24,7 @@
   #messengerWindow #mail-bar3:not(:-moz-lwtheme),
   #messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
   #messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	-moz-appearance: none !important;
+	appearance: none !important;
 	background: none !important;
   }
   
@@ -69,7 +69,7 @@
 	table,#calendar-panel,#imip-bar,#calMinimonthBox,
 	#today-splitter,#calendar-status-todaypane-button,
 	#calsidebar_splitter,#calMinimonthBox{
-	  -moz-appearance: -moz-win-borderless-glass !important;
+	  appearance: -moz-win-borderless-glass !important;
 	  background: transparent linear-gradient(to bottom, rgba(255,255,255,.1) 0px, rgba(255, 255, 255, .5) 30px ,rgba(255,255,255,.9)) !important;
 	}
 	

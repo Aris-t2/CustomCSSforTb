@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -11,7 +11,7 @@
 	}
 
 	.tabmail-tab:not(:-moz-lwtheme) {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		margin: 0px 1px !important;
 		border-top-right-radius: 4px !important;
 		border-top-left-radius: 4px !important;
@@ -23,13 +23,13 @@
 	}
 
 	.tabmail-tab:hover:not(:-moz-lwtheme){
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: linear-gradient(to top, hsla(0,0%,100%, .4) 0px, transparent 0px),
 			linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,.6) 40%) !important;
 	}
 
 	.tabmail-tab[selected=true]:not(:-moz-lwtheme) {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: linear-gradient(to top, hsla(0,0%,100%, .1) 0px, transparent 0px),
 			linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,100%,.0) 60%) !important;
 	}

@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -20,11 +20,11 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 
 /**/
 #messengerWindow:not(:-moz-lwtheme) .contentTabToolbox {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: #eaf2fb !important;
 }
 #messengerWindow:not(:-moz-lwtheme) .contentTabToolbox .searchBox {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: #ffffff !important;
   color: #000000 !important;
 }
@@ -34,8 +34,8 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 }
 
 /* filter bar */
-#messengerWindow:not(:-moz-lwtheme) :-moz-any(#quick-filter-bar,#quick-filter-bar-main-bar) {
-  -moz-appearance: none !important;
+#messengerWindow:not(:-moz-lwtheme) :is(#quick-filter-bar,#quick-filter-bar-main-bar) {
+  appearance: none !important;
   background: #dbeaf9 !important;
 }
 
@@ -64,9 +64,9 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 /*status bar*/
 #messengerWindow:not(:-moz-lwtheme) statusbar,
 #messengerWindow:not(:-moz-lwtheme) #status-bar {
-  -moz-appearance: none !important;  
+  appearance: none !important;  
   border-top: unset !important; 
-  -moz-padding-end: 0px !important;
+  padding-inline-end: 0px !important;
 }
 
 @media all and (-moz-windows-classic) {
@@ -77,7 +77,7 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 	
 	.chromeclass-status:not(:-moz-lwtheme) statusbarpanel,
 	.chromeclass-status:not(:-moz-lwtheme) .statusbar-resizerpanel{
-	  -moz-appearance: none !important;  
+	  appearance: none !important;  
 	  background: #dbeaf9 !important;
 	  border-left: 0px !important;
 	  border-right: 0px !important;
@@ -88,7 +88,7 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 #messengerWindow:not(:-moz-lwtheme) #status-bar,
 #messengerWindow:not(:-moz-lwtheme) #status-bar statusbarpanel,
 #messengerWindow:not(:-moz-lwtheme) #status-bar .statusbar-resizerpanel{
-  -moz-appearance: none !important;  
+  appearance: none !important;  
   background: #dbeaf9 !important;
   /*border-top: 1px solid rgba(0,0,0,.2) !important;*/
   border-left: 0px !important;
@@ -113,7 +113,7 @@ dialog .mail-toolbox:not(:-moz-lwtheme),
 }
 
 resizer {
-  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 /* Lightning */
@@ -153,7 +153,7 @@ window:not(#messengerWindow) .chromeclass-menubar:not(:-moz-lwtheme),
 	
 .chromeclass-status:not(:-moz-lwtheme) statusbarpanel,
 .chromeclass-status:not(:-moz-lwtheme) .statusbar-resizerpanel{
-  -moz-appearance: none !important;  
+  appearance: none !important;  
   background: #dbeaf9 !important;
   border-left: 0px !important;
   border-right: 0px !important;
@@ -161,6 +161,6 @@ window:not(#messengerWindow) .chromeclass-menubar:not(:-moz-lwtheme),
 }
 
 #messengerWindow[windowtype="mail:messageWindow"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: #eaf2fb !important;
 }

@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -16,7 +16,7 @@
 	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
 	#messengerWindow #navigation-toolbox #mail-toolbar-menubar2:not(:-moz-lwtheme) {
-	  -moz-appearance: none !important;
+	  appearance: none !important;
 	  background: #eaf2fb !important;
 	}
 }

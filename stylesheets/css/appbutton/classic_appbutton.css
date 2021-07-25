@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -11,7 +11,7 @@
 }
 
 #button-appmenu:not(:hover):not(:active):not([open]){
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
   transition: unset !important;
   border-top-color:hsla(214,89%,21%,.5) !important;
@@ -26,7 +26,7 @@
 			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
 #button-appmenu:hover:not(:active):not([open]){
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
 			  linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
@@ -43,7 +43,7 @@
 #button-appmenu:active,
 #button-appmenu:hover:active,
 #button-appmenu[open] {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
 			  linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
@@ -57,7 +57,7 @@
 			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
 #button-appmenu {
-  -moz-appearance:none !important;
+  appearance:none !important;
   transition: unset !important;
   background-clip: padding-box !important;
   color: var(--appbuttontextcolor) !important;
@@ -70,17 +70,17 @@
   border-left: 1px solid !important;
   border-bottom: 1px solid !important;
 }
-#button-appmenu:not(:-moz-any(:hover:active,[open])) {
+#button-appmenu:not(:is(:hover:active,[open])) {
   border-radius: 3px !important;
 }
-#button-appmenu:-moz-any(:hover:active,[open]) {
+#button-appmenu:is(:hover:active,[open]) {
   border-radius: 3px 3px 0 0 !important;
 }
 
-#tabs-toolbar #button-appmenu:not(:-moz-any(:hover:active,[open])),
-#tabs-toolbar #button-appmenu:-moz-any(:hover:active,[open]) {
+#tabs-toolbar #button-appmenu:not(:is(:hover:active,[open])),
+#tabs-toolbar #button-appmenu:is(:hover:active,[open]) {
   border-radius: 3px 3px 0 0 !important;
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
 }
 
 
@@ -92,13 +92,13 @@
 #button-appmenu .toolbarbutton-menu-dropmarker::before {
   display: -moz-box !important; 
   content: var(--appbuttonlabel) !important;
-  -moz-padding-end: 4px !important;
+  padding-inline-end: 4px !important;
 }*/
 
 #button-appmenu::after {
   display: -moz-box !important; 
   content: var(--appbuttonlabel) !important;
-  -moz-margin-start: -18px !important;
+  margin-inline-start: -18px !important;
 }
 
 #button-appmenu .toolbarbutton-text {
@@ -110,7 +110,7 @@
 }
 /*
 #button-appmenu .toolbarbutton-menu-dropmarker::before {
-  -moz-margin-start: -20px !important;
+  margin-inline-start: -20px !important;
 }*/
 
 #tabbar-toolbar {
@@ -120,5 +120,5 @@
 #mail-toolbar-menubar2 #button-appmenu{
   position: absolute !important;
   margin-top: 0px !important;
-  -moz-margin-start: 0px !important;
+  margin-inline-start: 0px !important;
 }

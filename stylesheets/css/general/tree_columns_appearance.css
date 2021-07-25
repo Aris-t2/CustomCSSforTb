@@ -1,11 +1,11 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
 /* tree columns */
 treecol,
 treecolpicker {
-  -moz-appearance: none !important;
+  appearance: none !important;
   background-image: linear-gradient(to top, #f8f8f8, #fbfbfb) !important;
   border-bottom: 1px solid lightgrey !important;
   color: black !important;

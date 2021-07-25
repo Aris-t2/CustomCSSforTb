@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -46,10 +46,10 @@
 /* tab icon position */
 .tab-throbber,
 .tab-icon-image {
-  -moz-margin-start: -6px !important;
+  margin-inline-start: -6px !important;
 }
 .tab-close-button {
-  -moz-margin-end: -6px !important;
+  margin-inline-end: -6px !important;
 }
 
 /* remove tab separators */
@@ -96,7 +96,7 @@
 
 /* tab size */
 .tabmail-tab {
-  -moz-appearance: none !important;
+  appearance: none !important;
   margin: 0px 0px 1px 0px !important;
   min-height: 0px !important;
 }
@@ -320,10 +320,10 @@
 /* tab icon position */
 .tab-throbber,
 .tab-icon-image {
-  -moz-margin-start: -6px !important;
+  margin-inline-start: -6px !important;
 }
 .tab-close-button {
-  -moz-margin-end: -8px !important;
+  margin-inline-end: -8px !important;
 }
 
 /* remove fckng rtrdd space before tabs, seriously devs what is wrong with you? */
@@ -383,10 +383,10 @@
 
 /* fix tabs toolbar position */
 :root[tabsintitlebar][sizemode=normal] #tabs-toolbar {
-  -moz-padding-start: 3px !important;
+  padding-inline-start: 3px !important;
 }
 :root[tabsintitlebar][sizemode=maximized] #tabs-toolbar {
-  -moz-padding-start: 0px !important;
+  padding-inline-start: 0px !important;
 }
 
 /* fix menubar postion */

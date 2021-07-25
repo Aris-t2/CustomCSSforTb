@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -9,7 +9,7 @@
 }
 
 /* mail list background */ 
-:-moz-any(#folderTree, #threadTree) { 
+:is(#folderTree, #threadTree) { 
   background: var(--mailpanel_background_color) !important; 
   color: var(--mailpanel_text_color) !important; 
 } 

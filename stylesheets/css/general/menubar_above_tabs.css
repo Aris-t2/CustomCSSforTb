@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -38,11 +38,11 @@
 		}
 
 		#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
-		  -moz-margin-start: -12px !important;
+		  margin-inline-start: -12px !important;
 		}
 
 		#messengerWindow[hcp_platformPlus="windows"] #mail-toolbar-menubar2 {
-		  -moz-margin-start: 150px !important;
+		  margin-inline-start: 150px !important;
 		}
 	
 	}
@@ -73,11 +73,11 @@
 	}
 
 	#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
-	  -moz-margin-start: -12px !important;
+	  margin-inline-start: -12px !important;
 	}
 
 	#messengerWindow[hcp_platformPlus="windows"] #mail-toolbar-menubar2 {
-	  -moz-margin-start: 150px !important;
+	  margin-inline-start: 150px !important;
 	}
 
 }

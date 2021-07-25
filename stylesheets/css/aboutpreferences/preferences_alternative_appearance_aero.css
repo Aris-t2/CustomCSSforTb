@@ -1,9 +1,20 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userContent.css tweaks ***********************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-@import url("./preferences_alternative_appearance.css");
+@import "./preferences_alternative_appearance.css";
 
-#MailPreferences {
-  background: linear-gradient(to bottom right, #edf6ff,#dbeaf9,#edf6ff,#dbeaf9) !important;
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+	
+	.navigation, #preferences-body,
+	window > stack > hbox,
+	#preferences-stack,.sticky-container,
+	page, page .dialogBox .groupbox-title,
+	.dialogBox .groupbox-title,
+	#pref-category-box,
+	#categories,
+	#MailPreferences {
+	  background: #edf6ff !important;
+	}
+
 }

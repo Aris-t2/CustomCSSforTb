@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -28,3 +28,4 @@
   #titlebar-max:hover {
 	background: var(--header_caption_button_color) !important;
   }
+}

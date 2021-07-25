@@ -1,4 +1,4 @@
-/* Thunderbird Quantum userChrome.css tweaks ****************************************************/
+/* Thunderbird userChrome.css tweaks ************************************************************/
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
@@ -49,13 +49,13 @@
 	
 	/*status bar*/
 	#messengerWindow:not(:-moz-lwtheme) #status-bar {
-	  -moz-appearance: none !important;  
+	  appearance: none !important;  
 	  border-top: unset !important;  
 	}
 	
 	#messengerWindow:not(:-moz-lwtheme) #status-bar statusbarpanel,
 	#messengerWindow:not(:-moz-lwtheme) #status-bar .statusbar-resizerpanel{
-	  -moz-appearance: none !important;  
+	  appearance: none !important;  
 	  /*border-top: 1px solid rgba(0,0,0,.2) !important;*/
 	  border-left: 0px !important;
 	  border-right: 0px !important;
@@ -101,7 +101,7 @@
 /* Dark theme tweaks */
 #messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #folderpane-mode-selector-menulist,
 #messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #folderPaneBox #folderTree treechildren,
-#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :-moz-any(#quick-filter-bar,#quick-filter-bar-main-bar) {
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext :is(#quick-filter-bar,#quick-filter-bar-main-bar) {
   background: #323234 !important;
   color: white !important;
 }
@@ -114,7 +114,6 @@
 #messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #folderPane-toolbar {
   border: 0 !important;
 }
-
 
 /* fix maximized mode */
 #messengerWindow[sizemode=maximized] {
