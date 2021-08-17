@@ -8,41 +8,37 @@
 	  margin-inline-start: 0px !important;
 	  padding-inline-end: 0px !important;
 	}
-
- 	#preferences-stack,.sticky-container,
-	page,
-	.dialogBox .groupbox-title,
-	#pref-category-box,
-	#categories	{
-	  background: -moz-Dialog !important;
-	}
 	
-	@media (prefers-color-scheme: dark) {
+	@media not (-moz-toolbar-prefers-color-scheme: dark) {
+
 		#preferences-stack,.sticky-container,
 		page,
-		.dialogBox .groupbox-title,
-		#pref-category-box,
-		#categories	{
-		    background: #18181a !important;
-			color: white !important;
+		.dialogBox .groupbox-title {
+		  background: -moz-Dialog !important;
 		}
-	}
+
+		#categories {
+		  background: transparent !important;
+		}
+
+		.groupbox-body,
+		#dialogFrame{
+		  background-color: white !important;
+		}
+		
+		#policies-container {
+		  background: transparent !important;
+		}
+		
+		#categories .category:not([selected]):not(:hover){
+		  color: black !important;
+		}
+		
+		.main-content {
+		  background-color: white !important;
+		}
+
 	
-	#preferencesContainer {
-	  padding: unset !important;
-	}
-	
-	#preferencesContainer .paneDeckContainer #paneDeck {
-	  padding: 0 28px !important;
-	}
-	
-	.paneDeckContainer{
-	  width: 100vw !important;
-	}
-	
-	.groupbox-body,
-	#dialogFrame{
-	  background-color: white !important;
 	}
 	
 	.main-content {
@@ -62,10 +58,8 @@
 	  padding-inline: 0px !important;
 	  min-height: unset !important;
 	  height: unset !important;
-	}
-	
-	#categories {
-	  padding: 0 !important;
+	  /*margin-top: -20px !important;*/
+	  background: unset !important;
 	}
 	
 	#policies-container, #searchInput {
@@ -73,26 +67,14 @@
 	  margin: 0 5px 5px 5px!important;
 	}
 
-	#policies-container {
-	  background: transparent !important;
-	}
+
 	
 	#searchInput[focused] {
 	  box-shadow: unset !important;
 	}
 	
-	.sticky-container,
-	.search-container {
-	  /*background: transparent !important;
-	  position: absolute !important;
-	  display:block !important;
-	  top: 20px !important;*/
-	  /*margin-top: -20px !important;
-	  margin-inline-start: 0px !important;
-	  padding-inline-end: 0px !important;
-	  min-width: unset !important;
-	  width: unset !important;
-	  max-width: unset !important;*/
+	.sticky-container {
+	  position: fixed !important;
 	}
 	
 	.header-name {
@@ -114,34 +96,30 @@
 	  color: HighlightText !important;
 	}
 
-	#categories .category:not([selected]):not(:hover){
-	  color: black !important;
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		#categories .category:not([selected]):not(:hover){
-		  color: white !important;
-		}
-	}
-	
+
 	#categories .category {
 	  transition-duration: unset !important;
 	}
 	
 	/* category icons */	
 	#MailPreferences #category-general .category-icon {
+																	  
 	  fill: #8b8b8b !important;
 	}
 	#MailPreferences #category-compose .category-icon {
 	  fill: #8aa8cc !important;
+														
 	}
 	#MailPreferences #category-privacy .category-icon {
+																	
 	  fill: purple !important;
 	}
 	#MailPreferences #category-chat .category-icon {
 	  fill: orange !important;
+														
 	}
 	#MailPreferences #category-calendar .category-icon {
+																	
 	  fill: red !important;
 	}
 	
@@ -158,7 +136,6 @@
 	/* alignment and text/font appearance */
 
 	#mainPrefPane {
-	  color: black !important;
 	  padding-inline-start: 30px !important;
 	  margin-top: 4px !important;
 	  margin-inline-start: -20px !important;
@@ -170,16 +147,9 @@
 	}
 
 	.main-content {
-	  margin-top: 4px !important;
+	  margin-top: 20px !important;
 	  margin-bottom: 20px !important;
-	  background-color: white !important;
 	  margin-inline-start: -1px !important;
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.main-content {
-		  background-color: black !important;
-		}
 	}
 
 	.header label {
@@ -218,11 +188,10 @@
 	menulist{
 	  min-height: unset !important;
 	  height: unset !important;
-	  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 	}
 	
 	button:not(.button-link):not(.close-icon):not(#contentBlockingToggle) {
-	  padding: 2px !important;
+	  padding:0px !important;
 	}
 	menulist{
 	  padding:2px !important;
@@ -236,16 +205,12 @@
 	  margin: 0 1px !important;
 	}
 	
-	/*checkbox label,
-	radio label {
-	  margin-inline-start: -10px !important;
-	}*/
 	
 	#homeContentsGroup checkbox label {
 	  margin-inline-start: 2px !important;
 	}
 	
-	radio *{
+	radio * {
 	  outline: unset !important;
 	}
 	
@@ -268,6 +233,14 @@
 	  margin-inline-start: 0 !important;
 	}
 	
+	#backContainersButton .button-box {
+	  padding-block-end: 20px !important
+	}
+	
+	.sidebar-footer-list {
+	  margin-inline: 0 !important;
+	}
+	
 }
 
 /* preference sub windows */
@@ -276,7 +249,6 @@
 *[subdialog="true"] menulist{
   min-height: unset !important;
   height: unset !important;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.20),rgba(0,0,0,0.01)) !important;
 }
 
 *[subdialog="true"] button:not(.button-link):not(.close-icon){
@@ -292,11 +264,6 @@
   height: 14px !important;
   margin: 0 !important;
 }
-
-/**[subdialog="true"] checkbox label,
-*[subdialog="true"] radio label {
-  margin-inline-start: -10px !important;
-}*/
 
 *[subdialog="true"] radio *{
   outline: unset !important;

@@ -228,8 +228,8 @@
 		/* tab close icon appearance */
 		.tabmail-tab .tab-content  .tab-close-button .toolbarbutton-icon,
 		.tabmail-tab .tab-content .close-icon .toolbarbutton-icon{
-		  min-width: unset !important;
-		  width: 16px !important;
+		  /*min-width: unset !important;
+		  width: 16px !important;*/
 		}
 		
 	}
@@ -300,7 +300,7 @@
   #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-icon,
   #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-box > .button-icon,
   #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .toolbarbutton-icon {
-	width: 16px !important;
+	/*width: 16px !important;*/
   }
 
 }
@@ -372,8 +372,9 @@
 .tabmail-tab .close-icon > .button-icon,
 .tabmail-tab .close-icon > .button-box > .button-icon,
 .tabmail-tab .close-icon > .toolbarbutton-icon {
-  width: 16px !important;
-  height: 16px !important;
+  /*width: 16px !important;
+  height: 16px !important;*/
+  background: unset !important;
 }
 
 #messengerWindow[sizemode="maximized"] #tabbar-toolbar {

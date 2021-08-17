@@ -6,14 +6,11 @@
 
 @-moz-document url(about:preferences),url-prefix(about:preferences){
 	
+	#pref-category-box,
 	.navigation, #preferences-body,
 	window > stack > hbox,
-	#preferences-stack,.sticky-container,
-	page, page .dialogBox .groupbox-title,
-	.dialogBox .groupbox-title,
-	#pref-category-box,
-	#categories,
-	#MailPreferences {
+	#preferences-stack,
+	page, page .dialogBox .groupbox-title{
 	  background: #edf6ff !important;
 	}
 

@@ -2,7 +2,9 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons),url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 					
 	:root {
 	  --in-content-category-text-hover: HighlightText !important;
@@ -11,16 +13,9 @@
 	  --in-content-category-background-selected: white !important;
 	  --section-width: unset !important;
 	  --main-margin-start: unset !important;
+	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
 	}
 	
-	@media (prefers-color-scheme: dark) {
-	  :root {
-	  --in-content-category-text-selected: white !important;
-	  --in-content-category-background-selected: black !important;
-	  }
-		
-	}
-
 	#categories .category:hover {
 	  color: var(--in-content-category-text-hover) !important;
 	  background-color: var(--in-content-category-background-hover) !important;
@@ -41,7 +36,6 @@
 	  transition: none !important;
 	}
 	
-
 	/* dimensions / positioning */
 	#addons-page .main-content{
 	  padding: 0 !important;
@@ -84,10 +78,6 @@
 	#addons-page #header{
 	  padding: 2px 0 !important;
 	  margin: 0 !important;
-	}
-	
-	.addon-card-message {
-	  margin: unset !important;
 	}
 	
 	/* tweaks for small windows */
@@ -289,16 +279,8 @@
 	  max-width: 32px !important;
 	  max-height: 32px !important;
 	}
-}
 
-
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
-	
-	:root{
-	  --in-content-page-background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
-	}
-
-	body > div#main {
+	body > div#full {
 	  margin-inline-start: -1px !important;
 	  margin-inline-end: 1px !important;
 	  margin-bottom: 4px !important;
@@ -307,15 +289,16 @@
 	  border: 0 !important;
 	  border-radius: 0 !important;
 	  background: linear-gradient(to bottom right, #f5f5f5,-moz-Dialog,#f5f5f5,-moz-Dialog) !important;
+	  
 	}
 	
-	@media (prefers-color-scheme: dark) {
+	@media (-moz-toolbar-prefers-color-scheme: dark) {
 		
 	  :root{
 		--in-content-page-background: linear-gradient(black,black) !important;
 	  }
 		
-	  body > div#main {
+	  body > div#full {
 		background: linear-gradient(black,black) !important;
 	  }
 		
@@ -346,7 +329,7 @@
 	}
 
 	/* reduce opacity for disabled add-ons */
-	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]), /* workaround for Fx 68-69*/
+	section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
 	addon-card:not([expanded]) > .addon.card[active="false"],
 	addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
 	addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
@@ -355,12 +338,31 @@
 	  transition: unset !important;
 	}
 	
-	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] { /* workaround for Fx 70+*/
+	section[section="1"] addon-card:not([expanded]) > .addon.card[active="true"] {
 	  color: inherit !important;
 	  opacity: 1.0 !important;
 	  transition: unset !important;
 	}
-
+	
+	addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+	  color: dimgray !important;
+	}
+	
+	@media (-moz-toolbar-prefers-color-scheme: dark) {
+		section[section="1"] addon-card:not([expanded]) > .addon.card:not([active="false"]),
+		addon-card:not([expanded]) > .addon.card[active="false"],
+		addon-card:not([expanded])[panelopen] > .addon.card[active="false"],
+		addon-card:not([expanded]) > .addon.card[active="false"]:focus-within,
+		addon-card:not([expanded]) > .addon.card[active="false"]:hover {
+		  color: lightgrey !important;
+		}
+		
+		addon-card[expanded] .addon-name[data-l10n-id="addon-name-disabled"] {
+		  color: lightgrey !important;
+		}
+	
+	}
+	
 	/* remove advertising other add-ons */
 	recommended-themes-section,
 	recommended-extensions-section {
@@ -371,46 +373,23 @@
 	  margin-bottom: 0px !important;
 	}
 
-}
 
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul),
-				url-prefix(about:addons) {
 	#addons-page .main-content{
 	  margin-inline-start: -1px !important;
 	}
-	
-}
-
-@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
-				url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
 
 	.main-heading,
 	.main-search {
-	  background: unset !important;
+	 /* background: unset !important;*/
 	  max-width: unset !important;
 	  padding-inline-start: unset !important;
 	  padding-top: unset !important;
 	  padding-bottom: unset !important;
 	  margin-inline-start: 0px !important;
 	}
-	
-	#sidebar {
-	  background: -moz-Dialog !important;
-	}
-	
 	.sticky-container {
-	  background: -moz-Dialog !important;
+	  background: #f9f9fa !important;
 	  z-index: 1000 !important;
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		#sidebar {
-		  background: black !important;
-		}
-		
-		.sticky-container {
-		  background: black !important;
-		}
 	}
 	
 	.main-search {
@@ -458,6 +437,7 @@
 	.card-heading-image {
 	  margin: unset !important;
 	}
+	
 
 	.category {
 	  margin-inline-end: -4px !important;
@@ -484,6 +464,11 @@
 	#help-button:hover {
 	  color: var(--in-content-category-text-hover) !important;
 	  background-color: var(--in-content-category-background-hover) !important;
+	}
+	
+	.addon-badge {
+	  width: 16px !important;
+	  height: 16px !important;
 	}
 
 }
