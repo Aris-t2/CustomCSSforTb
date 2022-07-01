@@ -1,0 +1,16 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./classic_appbutton.css";
+
+#button-appmenu::after,
+#button-appmenu .toolbarbutton-menu-dropmarker,
+#button-appmenu .toolbarbutton-menu-dropmarker::before,
+#button-appmenu .toolbarbutton-text {
+  display: none !important;
+}
+
+#button-appmenu .toolbarbutton-icon {
+  opacity: 1.0 !important;
+}

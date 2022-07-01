@@ -1,0 +1,17 @@
+/* Thunderbird userContent.css tweaks ***********************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./preferences_alternative_appearance.css";
+
+@-moz-document url(about:preferences),url-prefix(about:preferences){
+	
+	#pref-category-box,
+	.navigation, #preferences-body,
+	window > stack > hbox,
+	#preferences-stack,
+	page, page .dialogBox .groupbox-title{
+	  background: #edf6ff !important;
+	}
+
+}

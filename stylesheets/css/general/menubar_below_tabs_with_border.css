@@ -1,0 +1,9 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import url("./menubar_below_tabs.css");
+
+#messengerWindow #navigation-toolbox #toolbar-menubar {
+  border-bottom: 1px solid ThreeDShadow !important;
+}

@@ -1,0 +1,31 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+:root {
+  --header_background_color: #202340;
+  --header_text_color: #ffffff;
+  --header_caption_button_color: rgba(255,255,255,0.3);
+}
+
+#messengerWindow:not([style*="--lwt-header-image"]):-moz-lwtheme #navigation-toolbox, 
+#navigation-toolbox:not(:-moz-lwtheme) {
+  background: var(--header_background_color) !important;
+  color: var(--header_text_color) !important;
+}
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+  #messengerWindow:not(:-moz-lwtheme) {
+	background: var(--header_background_color) !important;
+  }
+  #titlebar-min .toolbarbutton-icon,
+  #titlebar-max .toolbarbutton-icon,
+  #titlebar-close:not(:hover) .toolbarbutton-icon {
+	fill: var(--header_text_color) !important;
+	color: var(--header_text_color) !important;
+	stroke: var(--header_text_color) !important;
+  }
+  #titlebar-min:hover,
+  #titlebar-max:hover {
+	background: var(--header_caption_button_color) !important;
+  }
+}

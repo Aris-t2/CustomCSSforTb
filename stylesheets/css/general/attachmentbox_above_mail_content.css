@@ -1,0 +1,47 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#messengerWindow #messagepanebox #messagepane,
+#msgNotificationBar{
+  -moz-box-ordinal-group: 20 !important;
+}
+
+#messengerWindow #messagepanebox #FindToolbar,
+#messagepanewrapper {
+  -moz-box-ordinal-group: 21 !important;
+}
+
+#attachmentView {
+  border-top:0 !important;
+  border-bottom: 1px solid #a9b7c9 !important;
+}
+
+splitter#attachment-splitter[orient="vertical"][collapsed] {
+  display: none;
+}
+ 
+splitter#attachment-splitter[orient="vertical"] {
+  pointer-events: none;
+}
+
+#attachmentbucket-sizer{
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#composeContentBox #attachmentView {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+#composeContentBox #compose-toolbar-sizer {
+  -moz-box-ordinal-group: 2 !important;
+}
+
+#composeContentBox #appcontent {
+  -moz-box-ordinal-group: 3 !important;
+}
+
+#composeContentBox #compose-toolbar-sizer {
+  height: 3px !important;
+  opacity: 0.1 !important;
+}

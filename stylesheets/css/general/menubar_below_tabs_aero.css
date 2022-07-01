@@ -1,0 +1,24 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import url("./menubar_below_tabs.css");
+
+#messengerWindow #navigation-toolbox #toolbar-menubar:not(:-moz-lwtheme) {
+  background: #eaf2fb !important;
+}
+
+#mail-menubar:not(:-moz-lwtheme) > menu {
+  color: black !important;
+}
+
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10),(-moz-platform:windows-win8),(-moz-platform:windows-win10) {
+
+	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #toolbar-menubar:not(:-moz-lwtheme) {
+	  appearance: none !important;
+	  background: #eaf2fb !important;
+	}
+
+}

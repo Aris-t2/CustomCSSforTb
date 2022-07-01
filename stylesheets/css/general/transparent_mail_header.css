@@ -1,0 +1,7 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#msgHeaderView {
+  background: unset !important;
+}

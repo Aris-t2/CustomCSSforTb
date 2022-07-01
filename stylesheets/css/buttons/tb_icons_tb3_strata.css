@@ -1,0 +1,207 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+.hdrReplyToSenderButton,
+.hdrDummyReplyButton,
+.hdrReplyButton,
+.hdrReplyAllButton,
+.hdrReplyListButton,
+.hdrFollowupButton,
+.hdrForwardButton,
+.hdrArchiveButton,
+.hdrJunkButton,
+.hdrTrashButton,
+.hdrTagButton,
+#button-getmsg,
+#button-newmsg ,
+#button-address,
+#button-reply,
+#button-replyall,
+#button-replylist,
+#button-forward,
+.delete-button,
+.junk-button,
+#button-print,
+#button-stop,
+#button-file,
+#button-nextUnread ,
+#button-previousUnread,
+#button-mark,
+#button-tag,
+#button-goback,
+#button-goforward,
+#button-compact,
+#button-archive,
+#button-chat,
+#button-nextMsg,
+#button-previousMsg,
+.button-appmenu,
+#qfb-show-filter-bar,
+#palette-box #qfb-show-filter-bar{
+  list-style-image: url("../../images/tb_mail_tb3_strata.png") !important;
+}
+
+#button-send,
+#button-contacts,
+#spellingButton,
+#button-attach,
+#button-security,
+#button-save,
+#quoteButton,
+#cut-button,
+#copy-button,
+#paste-button/*,
+#attachmentNotificationBox > notification .messageImage*/ {
+  list-style-image: url("../../images/tb_compose_tb3_strata.png") !important;
+}
+
+/* main window */
+.hdrReplyToSenderButton,
+.hdrDummyReplyButton,
+.hdrReplyButton {
+  -moz-image-region: rect(0px, 72px, 18px, 54px) !important;
+}
+.hdrReplyAllButton {
+  -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
+}
+.hdrReplyListButton,
+.hdrFollowupButton {
+  -moz-image-region: rect(0px, 126px, 18px, 108px) !important;
+}
+.hdrForwardButton {
+  -moz-image-region: rect(0px, 108px, 18px, 90px) !important;
+}
+.hdrArchiveButton {
+  -moz-image-region: rect(0px, 360px, 18px, 342px) !important;
+}
+.hdrJunkButton {
+  -moz-image-region: rect(0px, 162px, 18px, 144px) !important;
+}
+.hdrTrashButton {
+  -moz-image-region: rect(0px, 144px, 18px, 126px) !important;
+}
+.hdrTagButton {
+  -moz-image-region: rect(0px, 288px, 18px, 270px) !important;
+}
+#button-getmsg {
+  -moz-image-region: rect(0px, 18px, 18px, 0px) !important;
+}
+#button-newmsg {
+  -moz-image-region: rect(0px, 36px, 18px, 18px) !important;
+}
+#button-address {
+  -moz-image-region: rect(0px, 54px, 18px, 36px) !important;
+}
+#button-reply {
+  -moz-image-region: rect(0px, 72px, 18px, 54px) !important;
+}
+#button-replyall {
+  -moz-image-region: rect(0px, 90px, 18px, 72px) !important;
+}
+#button-replylist {
+  -moz-image-region: rect(0px, 126px, 18px, 108px) !important;
+}
+#button-forward {
+  -moz-image-region: rect(0px, 108px, 18px, 90px) !important;
+}
+.delete-button {
+  -moz-image-region: rect(0px, 144px, 18px, 126px) !important;
+}
+.junk-button {
+  -moz-image-region: rect(0px, 162px, 18px, 144px) !important;
+}
+#button-stop {
+  -moz-image-region: rect(0px, 198px, 18px, 180px) !important;
+}
+#button-file {
+  -moz-image-region: rect(0px, 216px, 18px, 198px) !important;
+}
+#button-nextUnread {
+  -moz-image-region: rect(0px, 234px, 18px, 216px) !important;
+}
+#button-previousUnread {
+  -moz-image-region: rect(0px, 252px, 18px, 234px) !important;
+}
+#button-mark {
+  -moz-image-region: rect(0px, 270px, 18px, 252px) !important;
+}
+#button-tag {
+  -moz-image-region: rect(0px, 288px, 18px, 270px) !important;
+}
+#button-goback {
+  -moz-image-region: rect(0px, 306px, 18px, 288px) !important;
+}
+#button-goforward {
+  -moz-image-region: rect(0px, 324px, 18px, 306px) !important;
+}
+#button-compact {
+  -moz-image-region: rect(0px, 342px, 18px, 324px) !important;
+}
+#button-archive {
+  -moz-image-region: rect(0px, 360px, 18px, 342px) !important;
+}
+#button-chat {
+  -moz-image-region: rect(0px, 396px, 18px, 378px) !important;
+}
+#button-nextMsg {
+  -moz-image-region: rect(0px, 414px, 18px, 396px) !important;
+}
+#button-previousMsg {
+  -moz-image-region: rect(0px, 432px, 18px, 414px) !important;
+}
+.button-appmenu {
+  -moz-image-region: rect(0px, 450px, 18px, 432px) !important;
+  min-width: 35px !important;
+}
+#qfb-show-filter-bar,
+#palette-box #qfb-show-filter-bar {
+  -moz-image-region: rect(0px, 378px, 18px, 360px) !important;
+}
+
+/* compose window */
+#button-send {
+  -moz-image-region: rect(0px 18px 18px 0px) !important;
+}
+#button-contacts {
+  -moz-image-region: rect(0px 36px 18px 18px) !important;
+}
+#spellingButton {
+  -moz-image-region: rect(0px 54px 18px 36px) !important;
+}
+#button-attach {
+  -moz-image-region: rect(0px 72px 18px 54px) !important;
+}
+#button-security {
+  -moz-image-region: rect(0px 90px 18px 72px) !important;
+}
+#button-save {
+  -moz-image-region: rect(0px 108px 18px 90px) !important;
+}
+#quoteButton {
+  -moz-image-region: rect(0px 126px 18px 108px) !important;
+}
+#cut-button {
+  -moz-image-region: rect(0px 144px 18px 126px) !important;
+}
+#copy-button {
+  -moz-image-region: rect(0px 162px 18px 144px) !important;
+}
+#paste-button {
+  -moz-image-region: rect(0px 180px 18px 162px) !important;
+}
+#button-print{
+  -moz-image-region: rect(0px 180px 18px 162px) !important;
+}
+
+toolbar .toolbarbutton-1 .toolbarbutton-icon{
+  height: 18px !important;
+  width: 18px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*#attachmentNotificationBox > notification .messageImage {
+  width: 18px !important;
+  height: 18px !important;
+  background-position: -54px top !important;
+}*/

@@ -1,0 +1,399 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+/* remove top toolbar shadows */
+#mail-toolbox,
+.mail-toolbox,
+#mail-toolbar-menubar2,
+#tabs-toolbar,
+#tabs-toolbar::after,
+#tabs-toolbar::before,
+#navigation-toolbox::before,
+#navigation-toolbox::after {
+  box-shadow: none !important;
+}
+
+/* remove curved tabs look */
+.tabmail-tab .tab-background,
+.tab-background-start[selected=true]:-moz-locale-dir(ltr)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(ltr)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-middle[selected=true]{
+  background: none !important;
+  box-shadow: unset !important;
+}
+
+/* remove useless tab text/label indicator */
+.tabmail-tab[selected] :is(.tab-text,.tab-label) {
+  border: 1px solid transparent !important;
+}
+
+/* adjust tab image */
+.tab-image-left,
+.tab-image-right {
+  width: 8px !important;
+  clip-path: none !important;
+  background:none !important;
+}
+
+/* tab icon position */
+.tab-throbber,
+.tab-icon-image {
+  margin-inline-start: -6px !important;
+}
+.tab-close-button {
+  margin-inline-end: -6px !important;
+}
+
+/* remove tab separators */
+.tabmail-tab:not([selected]):not(:hover) +
+.tabmail-tab:not([selected]):not(:hover)::before,
+.tabmail-tab:last-child:not([selected]):not(:hover)::after {
+  /*visibility:collapse !important;*/
+  opacity: 0 !important;
+}
+
+/* remove forced tab height */
+.tab-background-start[selected=true]::after,
+.tab-background-start[selected=true]::before,
+.tab-background-start,
+.tab-background-end,
+.tab-background-end[selected=true]::after,
+.tab-background-end[selected=true]::before {
+  min-height: 0px !important;
+}
+
+/* remove tab background margin */
+.tab-background {
+  margin-inline-end: 0px !important;
+  margin-inline-start: 0px !important;
+}
+
+.tab-background-middle {
+  margin-inline-end: 0px !important;
+  margin-inline-start: 0px !important;
+}
+
+.tab-background-start,
+.tab-background-end {
+  width: 0 !important;
+  margin-inline-end: 0px !important;
+  margin-inline-start: 0px !important;
+}
+
+/* remove tab scrollbox padding */
+.tabmail-arrowscrollbox > scrollbox {
+  padding-inline-end: unset !important;
+  padding-inline-start: unset !important;
+}
+
+/* tab size */
+.tabmail-tab {
+  appearance: none !important;
+  margin: 0px 0px 1px 0px !important;
+  min-height: 0px !important;
+}
+
+/* remove line for light lw-themes */
+#tabs-toolbar:-moz-lwtheme-darktext {
+  background: unset !important;
+}
+
+/* override tab text colors */
+#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab,
+#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab > .tab-stack > .tab-content > .tab-text,
+#tabs-toolbar:-moz-lwtheme-darktext .tabmail-tab,
+#tabs-toolbar:-moz-lwtheme-darktext .tabmail-tab > .tab-stack > .tab-content > .tab-text {
+  color: black !important;
+}
+
+#tabs-toolbar:-moz-lwtheme-brighttext .tabmail-tab,
+#tabs-toolbar:-moz-lwtheme-brighttext .tabmail-tab > .tab-stack > .tab-content > .tab-text {
+  color: white !important;
+}
+
+#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab,
+#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab > .tab-stack > .tab-content > .tab-text,
+#tabs-toolbar:-moz-lwtheme[brighttext] .tabmail-tab,
+#tabs-toolbar:-moz-lwtheme[brighttext] .tabmail-tab > .tab-stack > .tab-content > .tab-text {
+  color: black !important;
+  fill: black !important;
+}
+
+#tabs-toolbar:-moz-lwtheme[darktext] .tabmail-tab,
+#tabs-toolbar:-moz-lwtheme[darktext] .tabmail-tab > .tab-stack > .tab-content > .tab-text {
+  color: white !important;
+  fill: white !important;
+}
+
+
+/* non-Aero: e.g Win Classic, Linux or macOS*/
+/*@media not all and (-moz-windows-theme:aero) {*/
+	
+	/* tab appearance */
+	.tabmail-tab {
+	  border: 1px solid #808080 !important;
+	  border-bottom: 0px !important;
+	}
+
+	#tabs-toolbar:-moz-lwtheme-brighttext .tabmail-tab {
+	  border: 1px solid black !important;
+	  border-bottom: 0px !important;
+	}
+
+	#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab {
+	  background-image: linear-gradient(transparent,hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
+						linear-gradient(to top,rgba(0,0,0,.4),-moz-dialog 1px, -moz-dialog) !important;
+	}
+
+	#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab:hover{
+	  background-image: linear-gradient(transparent,hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
+						linear-gradient(to top,rgba(0,0,0,.4),-moz-dialog 1px, -moz-dialog) !important;
+	}
+
+	#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab[selected] {
+	  background-image: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.4) 50%),
+						linear-gradient(-moz-dialog, -moz-dialog) !important;
+	}
+
+	#tabs-toolbar:-moz-lwtheme .tabmail-tab {
+	  background-image: linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)) !important;
+	}
+
+	#tabs-toolbar:-moz-lwtheme .tabmail-tab:hover{
+	  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.3) 50%) !important;
+	}
+
+	#tabs-toolbar:-moz-lwtheme .tabmail-tab[selected] {
+	  background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.4) 50%) !important;
+	}
+	
+	/* tab close icon appearance */
+	.tabmail-tab:not([selected]) .tab-close-button {
+	  list-style-image: url('../../images/close.png') !important;
+	 -moz-image-region: rect(0, 16px, 16px, 0) !important;
+	}
+
+	.tabmail-tab:not([selected]) .tab-close-button:hover,
+	.tabmail-tab:not([selected]) .tab-close-button:hover[selected="true"] {
+	  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
+	}
+
+	.tabmail-tab:not([selected]) .tab-close-button:hover:active,
+	.tabmail-tab:not([selected]) .tab-close-button:hover:active[selected="true"] {
+	  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+	}
+/*}*/
+
+
+/* Windows 'Aero' */
+@media all and (-moz-windows-theme:aero) {
+
+	/* tab appearance */
+	.tabmail-tab {
+	  border: 1px solid rgba(0,0,0,.4) !important;
+	  border-bottom: 0px !important;
+	}
+
+	#tabs-toolbar:-moz-lwtheme-brighttext .tabmail-tab {
+	  border: 1px solid black !important;
+	  border-bottom: 0px !important;
+	}
+	
+	/* Win8/Win10 */
+	@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10) {
+		
+		/* tab appearance */
+		#tabs-toolbar .tabmail-tab {
+		  border: 1px solid rgba(0,0,0,.2) !important;
+		  border-bottom: 0px !important;
+		}
+
+		#tabs-toolbar:-moz-lwtheme-brighttext .tabmail-tab {
+		  border: 1px solid black !important;
+		  border-bottom: 0px !important;
+		}
+
+		#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab {
+		  background-image: linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
+							linear-gradient(to top,rgba(0,0,0,.4),-moz-dialog 1px, -moz-dialog) !important;
+		}
+
+		#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab:hover{
+		  background-image: linear-gradient(transparent, hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
+							linear-gradient(to top,rgba(0,0,0,.4),-moz-dialog 1px, -moz-dialog) !important;
+		}
+	
+		#tabs-toolbar:not(:-moz-lwtheme) {
+		  background-image: linear-gradient(to top, rgba(0,0,0,.6), transparent 1px) !important;
+		}
+		
+
+		
+	}
+	
+	@media (-moz-os-version:windows-win8),(-moz-platform: windows-win8) {
+		
+		#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab[selected] {
+		  background-image: linear-gradient(rgba(255,255,255,.7), rgba(240,240,240,.0) 50%),
+							linear-gradient(-moz-dialog, #f9f9fa) !important;
+		}
+	
+	}
+	
+	@media (-moz-os-version:windows-win10),(-moz-platform: windows-win10) {
+		
+		#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab[selected] {
+		  background-image: linear-gradient(rgba(255,255,255,.7), rgba(240,240,240,.4) 50%),
+							linear-gradient(-moz-dialog, -moz-dialog) !important;
+		}
+	
+	}
+
+}
+
+
+/* default Dark lw-theme */
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #tabs-toolbar .tabmail-tab {
+  background-image: linear-gradient(#0c0c0d, #0c0c0d) !important;
+}
+
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #tabs-toolbar .tabmail-tab:hover{
+  background-image: linear-gradient(#252526, #252526) !important;
+}
+
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-brighttext #tabs-toolbar .tabmail-tab[selected] {
+  background-image: linear-gradient(#323234, #323234) !important;
+}
+
+/* default Light lw-theme */
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #tabs-toolbar .tabmail-tab {
+  background-image: linear-gradient(#e3e4e6, #e3e4e6) !important;
+}
+
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #tabs-toolbar .tabmail-tab:hover{
+  background-image: linear-gradient(#cccdcf, #cccdcf) !important;
+}
+
+#messengerWindow:not([style*='--lwt-header-image']):-moz-lwtheme:-moz-lwtheme-darktext #tabs-toolbar .tabmail-tab[selected] {
+  background-image: linear-gradient(#f5f6f7, #f5f6f7) !important;
+}
+
+@media (min-resolution: 1.0dppx) {
+	
+  /* tab close icon appearance */
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon {
+	list-style-image: url("../../images/close.png") !important;
+	-moz-image-region: rect(0, 16px, 16px, 0) !important;
+  }
+
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon:hover {
+	-moz-image-region: rect(0, 32px, 16px, 16px) !important;
+  }
+
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon:hover:active {
+	-moz-image-region: rect(0, 48px, 16px, 32px) !important;
+  }
+
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-icon,
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-box > .button-icon,
+  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .toolbarbutton-icon {
+	/*width: 16px !important;*/
+  }
+
+}
+
+
+/* Tb 57 tweaks */
+
+.tabmail-tab {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.tabmail-tab[selected] .tab-text,
+.tabmail-tab[selected] .tab-label {
+  border: 0px solid transparent !important;
+}
+
+/* tab icon position */
+.tab-throbber,
+.tab-icon-image {
+  margin-inline-start: -6px !important;
+}
+.tab-close-button {
+  margin-inline-end: -8px !important;
+}
+
+/* remove fckng rtrdd space before tabs, seriously devs what is wrong with you? */
+:root[tabsintitlebar][sizemode=normal] #mail-toolbar-menubar2[autohide=true] ~ #tabs-toolbar > #tabbar-toolbar {
+  margin-inline-start: 0px !important;
+}
+
+:root[tabsintitlebar][sizemode=normal] #mail-toolbar-menubar2[autohide=true] ~ #tabs-toolbar {
+  margin-top: 2px !important;
+}
+
+/* remove tab toolbars box shadow */
+#tabs-toolbar:not(:-moz-lwtheme)::before {
+  box-shadow: unset !important;
+}
+
+/* unset default tab colors */
+#tabs-toolbar .tabmail-tab[visuallyselected="true"],
+#tabs-toolbar .tabmail-tab,
+#tabs-toolbar .tabmail-tab .tab-background {
+  background: unset !important;
+}
+
+/* unset default tab colors */
+#tabs-toolbar .tabmail-tab .tab-background {
+  border: unset !important;
+}
+
+/* hide tab separators */
+.tabmail-tab::after,
+.tabmail-tab::before {
+  opacity: 0 !important;
+  border-image: unset !important;
+  border-image-slice: unset !important;
+  width: unset !important;
+}
+
+
+#tabs-toolbar .tabmail-tab .tab-line {
+  display: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+.tabmail-tab .close-icon,
+.tabmail-tab .close-icon > .button-icon,
+.tabmail-tab .close-icon > .button-box > .button-icon,
+.tabmail-tab .close-icon > .toolbarbutton-icon {
+  background: unset !important;
+}
+
+#messengerWindow[sizemode="maximized"] #tabbar-toolbar {
+  min-height: 1px !important;
+  height: 1px !important;
+}
+
+/* fix tabs toolbar position */
+:root[tabsintitlebar][sizemode=normal] #tabs-toolbar {
+  padding-inline-start: 3px !important;
+}
+:root[tabsintitlebar][sizemode=maximized] #tabs-toolbar {
+  padding-inline-start: 0px !important;
+}
+
+/* fix menubars position */
+#toolbar-menubar {
+  padding-top: unset !important;
+  margin-top: unset !important;
+}

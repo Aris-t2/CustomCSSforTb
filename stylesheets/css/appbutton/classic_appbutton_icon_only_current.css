@@ -1,0 +1,13 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./classic_appbutton_icon_only.css";
+
+#button-appmenu .toolbarbutton-icon {
+  opacity: 1.0 !important;
+  list-style-image: url(../../images/tb_icon_def2.png) !important;
+  -moz-image-region: rect(0px, 32px, 32px, 0px) !important;
+  width: 18px !important;
+  height: 18px !important;
+}

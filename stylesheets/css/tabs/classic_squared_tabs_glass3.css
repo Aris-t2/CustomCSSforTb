@@ -1,0 +1,87 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@media all and (-moz-windows-compositor) {
+
+	.tabmail-tab .tab-background{
+	  background:none !important;
+	  margin-inline-end: -16px !important;
+	  margin-inline-start: -16px !important;
+	}
+
+	.tabmail-tab:not(:-moz-lwtheme) {
+		appearance: none !important;
+		margin: 0px 1px !important;
+		border-top-right-radius: 4px !important;
+		border-top-left-radius: 4px !important;
+		max-height:25px !important;
+		border: 1px solid hsla(0,0%,100%, .2) !important;
+		border-bottom: 0px solid !important;
+		background: linear-gradient(to top, hsla(0,0%,100%, .2) 0px, transparent 0px),
+			linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.2) 20%) !important;
+	}
+
+	.tabmail-tab:hover:not(:-moz-lwtheme){
+		appearance: none !important;
+		background: linear-gradient(to top, hsla(0,0%,100%, .4) 0px, transparent 0px),
+			linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,.6) 40%) !important;
+	}
+
+	.tabmail-tab[selected=true]:not(:-moz-lwtheme) {
+		appearance: none !important;
+		background: linear-gradient(to top, hsla(0,0%,100%, .1) 0px, transparent 0px),
+			linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,100%,.0) 60%) !important;
+	}
+	
+	.tab-image-left,
+	.tab-image-right {
+		width: 8px !important;
+		clip-path: none !important;
+		background:none !important;
+	}
+
+	.tabmail-tab:not([selected]):not(:hover) +
+	.tabmail-tab:not([selected]):not(:hover)::before,
+	.tabmail-tab:last-child:not([selected]):not(:hover)::after {
+		visibility:collapse !important;
+	}
+
+
+	.tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+	.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+	.tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+	.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+	.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+	.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after,
+	.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
+	.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after,
+	.tab-background-middle[selected=true]{
+	  background: none !important;
+	}
+	
+	* #tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab {
+	  background-image: linear-gradient(to top, hsla(0,0%,100%, .2) 0px, transparent 0px),
+						linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.2) 20%) !important;
+	}
+
+	* #tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab:hover{
+	  background-image: linear-gradient(to top, hsla(0,0%,100%, .4) 0px, transparent 0px),
+						linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,.6) 40%) !important;
+	}
+
+	* #tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab[selected] {
+	  background-image: linear-gradient(to top, hsla(0,0%,100%, .1) 0px, transparent 0px),
+						linear-gradient(hsla(0,0%,100%,.1), hsla(0,0%,100%,.0) 60%) !important;
+	}
+	
+	/* Tab text */
+	#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab,
+	#tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab > .tab-stack > .tab-content > .tab-text,
+	* #tabs-toolbar:not(:-moz-lwtheme) .tabmail-tab .tab-text,
+	.tabmail-tab:not(:-moz-lwtheme) .tab-text{
+	  color: #FFFFFF !important;
+	  text-shadow: #000000 1px 1px 1.5px !important;
+	}
+
+}

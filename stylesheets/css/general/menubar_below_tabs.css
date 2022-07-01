@@ -1,0 +1,185 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#toolbar-menubar {
+  -moz-box-ordinal-group: 20 !important;
+  -moz-window-dragging: unset !important;
+  border: unset !important;
+  padding-top: unset !important;
+  margin-top: unset !important;
+}
+
+#messengerWindow[sizemode="normal"] #toolbar-menubar {
+  border-left: 1px solid rgba(0,0,0,.4) !important;
+  border-right: 1px solid rgba(0,0,0,.4) !important;
+}
+		
+@media (-moz-os-version: windows-vista), (-moz-os-version: windows-win7), (-moz-platform: windows-vista),(-moz-platform: windows-win7) {
+
+	@media not all and (-moz-windows-glass) {
+
+		#toolbar-menubar:not(:-moz-lwtheme) {
+		  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),
+					  linear-gradient(-moz-dialog, -moz-dialog) !important;
+		}
+		
+		
+		#toolbar-menubar[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+		#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+		  display: -moz-box !important;
+		}
+
+		#messengerWindow[sizemode="maximized"] #tabs-toolbar {
+		  margin-top: -1px !important;
+		}
+		@media all and (-moz-windows-theme: aero) {
+			#toolbar-menubar:not(:-moz-lwtheme) {
+			   background: #eaf2fb !important;
+			}
+			#toolbar-menubar {
+			  padding-bottom: 0px !important;
+			  margin-bottom: 0px !important;
+			}
+		}
+		@media all and (-moz-windows-classic) {
+			
+			#toolbar-menubar menubar > menu {
+			  appearance: none !important;
+			}
+			
+			#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) toolbarbutton > :is(label,description),
+			#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
+			  color: black !important;
+			}
+			#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu[_moz-menuactive="true"] {
+			  color: white !important;
+			}
+			#toolbar-menubar:-moz-lwtheme {
+			  appearance: none !important;
+			  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
+			}
+			
+			#messengerWindow:not([sizemode="maximized"]) #tabs-toolbar {
+			  margin-top: 3px !important;
+			}
+
+		}
+	}
+
+}
+
+/*move menubar below tabs for Windows XP, Linux*/
+@media (not (-moz-os-version: windows-win10)) and (not (-moz-os-version: windows-win8)) and (not (-moz-os-version: windows-win7))
+	
+	#toolbar-menubar menubar > menu {
+	  appearance: none !important;
+	}
+	
+	#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext) menubar > menu:not([_moz-menuactive="true"]):not(:hover):not([open="true"]) {
+	  color: black !important;
+	}
+	
+	#toolbar-menubar {
+	  -moz-box-ordinal-group: 20 !important;
+	  -moz-window-dragging: unset !important;
+	  border: unset !important;
+	  padding-top: unset !important;
+	  margin-top: unset !important;
+	}
+	
+	#toolbar-menubar[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+	#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+	  display: -moz-box !important;
+	}
+
+	#messengerWindow[sizemode="maximized"] #tabs-toolbar {
+	  margin-top: -1px !important;
+	}
+
+	#toolbar-menubar:-moz-lwtheme {
+	  appearance: none !important;
+	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)) !important;
+	}
+	
+	#toolbar-menubar:not(:-moz-lwtheme) {
+	  appearance: none !important;
+	  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)),
+				  linear-gradient(-moz-dialog, -moz-dialog) !important;
+	}
+	
+	@media all and (-moz-windows-classic) {
+		
+		#messengerWindow:not([sizemode="maximized"]) #tabs-toolbar {
+		  margin-top: 3px !important;
+		}
+
+	}
+
+}
+
+@media (-moz-os-version:windows-win8),(-moz-os-version:windows-win10),(-moz-platform:windows-win8),(-moz-platform:windows-win10) {
+	#toolbar-menubar {
+	  appearance: none !important;
+	  -moz-box-ordinal-group: 20 !important;
+	  -moz-window-dragging: unset !important;
+	  border: unset !important;
+	  padding-top: unset !important;
+	  margin-top: unset !important;
+	}
+	
+	#mail-menubar:not(:-moz-lwtheme) > menu {
+	  color: black !important;
+	}
+
+	#toolbar-menubar[autohide="false"] + #tabs-toolbar > .titlebar-placeholder[type="caption-buttons"],
+	#messengerWindow #tabs-toolbar #titlebar-placeholder-on-TabsToolbar-for-captions-buttons[type="caption-buttons"] {
+	  display: -moz-box !important;
+	}
+
+	@media all and (-moz-windows-theme: aero) {
+		#toolbar-menubar {
+		  padding-bottom: 0px !important;
+		  margin-bottom: 0px !important;
+		}
+	}
+	
+	#messengerWindow:-moz-lwtheme #toolbar-menubar {
+	  background-color: var(--toolbar-bgcolor) !important;
+	}
+}
+
+
+@media (-moz-os-version:windows-win8),(-moz-platform:windows-win8) {
+	
+	#mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #toolbar-menubar:not(:-moz-lwtheme) {
+	  appearance: none !important;
+	  background: #f9f9fa !important;
+	}
+
+}
+
+@media (-moz-os-version:windows-win10),(-moz-platform:windows-win10) {
+	
+	#mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox #toolbar-menubar:not(:-moz-lwtheme) {
+	  appearance: none !important;
+	  background: #f0f0f0 !important;
+	}
+	
+	#messengerWindow[sizemode="normal"] #toolbar-menubar {
+	  border-left: 0 !important;
+	  border-right: 0 !important;
+	}
+	
+}
+
+#toolbar-menubar .titlebar-buttonbox-container {
+  display: none !important;
+}
+
+#tabs-toolbar .titlebar-buttonbox-container{
+  display: flex !important;
+}
+	

@@ -1,0 +1,91 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#toolbar-menubar {
+  -moz-box-ordinal-group: 0 !important;
+  -moz-window-dragging: default !important;
+  background: unset !important;
+  border: unset !important;
+}
+
+/* move menubar above tabs for Windows Vista/7 AeroGlass */
+@media (-moz-os-version: windows-vista), (-moz-os-version: windows-win7), (-moz-platform: windows-vista),(-moz-platform: windows-win7) {
+  @media all and (-moz-windows-compositor) {
+	@media all and (-moz-windows-glass) {
+
+		#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive) #menubar-items {
+		  background-color: rgba(255,255,255,0.5) !important;
+		  border-radius: 6px !important;
+		}
+		
+		#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext):not(:-moz-window-inactive) menubar > menu {
+		  color: inherit !important;
+		  text-shadow: 0 0 3px white, 0 0 3px white !important;
+		}
+		
+		#toolbar-menubar:not(:-moz-lwtheme):not(:-moz-lwtheme-brighttext):-moz-window-inactive menubar > menu {
+		  color: inherit !important;
+		  text-shadow: 0 0 3px white !important;
+		}
+		#messengerWindow #calendarTabPanel:-moz-lwtheme {
+		  margin-top: 0px !important;
+		}
+
+		#messengerWindow #titlebar-placeholder-on-TabsToolbar-for-captions-buttons,
+		#messengerWindow[hcp_platformPlus="windows"] #hctp-appmenu-button-placeholder{
+		  display: none !important;
+		}
+
+		#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
+		  margin-inline-start: -12px !important;
+		}
+
+		#messengerWindow[hcp_platformPlus="windows"] #toolbar-menubar {
+		  margin-inline-start: 150px !important;
+		}
+	
+	}
+    
+  }
+}
+
+@media (-moz-os-version:windows-win8),(-moz-platform:windows-win8),(-moz-os-version:windows-win10),(-moz-platform:windows-win10) {
+	
+	#toolbar-menubar {
+	  -moz-box-ordinal-group: 0 !important;
+	  -moz-window-dragging: default !important;
+	  background: unset !important;
+	  border: unset !important;
+	}
+  
+	#messengerWindow #toolbar-menubar {
+	  background: unset !important;
+	}
+	
+	#messengerWindow #calendarTabPanel:-moz-lwtheme {
+	  margin-top: 0px !important;
+	}
+
+	#messengerWindow #titlebar-placeholder-on-TabsToolbar-for-captions-buttons,
+	#messengerWindow[hcp_platformPlus="windows"] #hctp-appmenu-button-placeholder{
+	  display: none !important;
+	}
+
+	#messengerWindow[hcp_platformPlus="windows"] #tabcontainer {
+	  margin-inline-start: -12px !important;
+	}
+
+	#messengerWindow[hcp_platformPlus="windows"] #toolbar-menubar {
+	  margin-inline-start: 150px !important;
+	}
+
+}
+
+
+@media (-moz-os-version:windows-win7),(-moz-platform:windows-win7) {
+  @media all and (-moz-windows-theme:aero) {
+	#toolbar-menubar:not(:-moz-lwtheme){
+	  background: unset !important;
+	}
+}}

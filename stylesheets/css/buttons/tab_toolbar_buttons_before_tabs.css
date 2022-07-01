@@ -1,0 +1,23 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#tabbar-toolbar {
+  -moz-box-ordinal-group: 0 !important;
+  padding-inline-end: 1px !important;
+}
+
+:root[tabsintitlebar][sizemode=normal] #navigation-toolbox #tabs-toolbar,
+:root[tabsintitlebar][sizemode=maximized] #navigation-toolbox #tabs-toolbar {
+  padding-inline-start: 0px !important;
+}
+
+@media all and (-moz-windows-classic) {
+  #mail-toolbar-menubar2[autohide="false"] + #tabs-toolbar > .titlebar-placeholder {
+	display: block !important;
+  }
+}
+
+#tabbar-toolbar {
+  padding-inline-start: 0px !important;
+}
