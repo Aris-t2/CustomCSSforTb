@@ -2,7 +2,7 @@
   Thunderbird userChrome.css tweaks: main file
   
   Custom CSS for Thunderbird 102+
-  Current version: 2.0.0
+  Current version: 2.0.1
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssfortb
@@ -49,7 +49,7 @@
    [!] set global variables for font and tab size options and more inside target file 
 */
 
-/* @import "./config/config.css"; /**/
+@import "./config/config.css"; /**/
 
 
 /* ==============
@@ -132,7 +132,7 @@
 /* @import "./css/buttons/tb_icons_tb1.css"; /**/
 /* @import "./css/buttons/tb_icons_tb2.css"; /**/
 /* @import "./css/buttons/tb_icons_tb3.css"; /**/
- @import "./css/buttons/tb_icons_tb3_strata.css"; /**/
+/* @import "./css/buttons/tb_icons_tb3_strata.css"; /**/
 /* @import "./css/buttons/tb_icons_dark.css"; /**/
 /* @import "./css/buttons/tb_icons_white.css"; /**/
 /* @import "./css/buttons/tb_icons_tb_mac.css"; /**/
@@ -172,6 +172,7 @@
 /* @import "./css/appbutton/classic_appbutton_icon_only_old1.css"; /* old Thunderbird icon */
 /* @import "./css/appbutton/classic_appbutton_icon_only_old2.css"; /* old Thunderbird icon v2 */
 /* @import "./css/appbutton/classic_appbutton_icon_only_current.css"; /* current Thunderbird icon */
+/* @import "./css/appbutton/appbutton_hidden.css"; /* hide App/Thunderbird button */
 
 
 
@@ -211,6 +212,7 @@
 
 /* @import "./css/general/window_header_colors.css"; /**/
 /* @import "./css/general/mail_panel_color.css"; /**/
+/* @import "./css/general/mail_panel_tree_colors.css"; /**/
 /* @import "./css/general/increase_row_height.css"; /**/
 /* @import "./css/general/transparent_mail_header.css"; /**/
 
@@ -270,6 +272,14 @@
 /* @import "./css/general/menubar_below_tabs_with_border.css"; /**/
 /* @import "./css/general/menubar_below_tabs_with_border_aero.css"; /**/
 
+
+/* -------------------
+   Menupoup appearance
+   -------------------
+
+*/
+
+/* @import "./css/general/menupopup_squared_borders.css"; /**/
 
 /* ----------
    Hide items

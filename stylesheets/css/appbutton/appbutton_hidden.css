@@ -1,0 +1,9 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#button-appmenu,
+#calendar-appmenu-button,
+#button-chat-appmenu {
+  display: none !important;
+}

@@ -16,6 +16,14 @@
   /* mail_panel_color.css */
   --mailpanel_background_color: #ffffff !important;
   --mailpanel_text_color: #000000 !important;
+  
+  /* mail_panel_tree_colors.css */
+  --mailpaneltree_row_even_background_color: #b1ccfd !important;
+  --mailpaneltree_row_odd_background_color: #e8f0ff !important;
+  --mailpaneltree_row_selected_background_color: Highlight !important;
+  --mailpaneltree_row_unread_background_color: #a6b2ca !important;
+  --mailpaneltree_row_selected_text_color: HighlightText !important;
+  --mailpaneltree_row_unread_text_color: #000000 !important;
 
   /* classic_appbutton.css */
   --appbuttonlabel: "Thunderbird" !important;

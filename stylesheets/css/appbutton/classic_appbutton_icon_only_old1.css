@@ -4,7 +4,7 @@
 
 @import "./classic_appbutton_icon_only.css";
 
-#button-appmenu .toolbarbutton-icon {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-icon {
   opacity: 1.0 !important;
   list-style-image: url(../../images/tb_icon_def.png) !important;
   -moz-image-region: rect(0px, 32px, 32px, 0px) !important;

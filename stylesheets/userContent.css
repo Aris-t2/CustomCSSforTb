@@ -37,6 +37,14 @@
 
 */
 
+/* -------------------------
+   Classic button appearance
+   -------------------------
+*/
+
+/* affects address book, chat ...*/
+@import "./css/buttons/ctb_on_main_toolbars.css"; /**/
+
 
 /* ============================
    ADDON MANAGER (about:addons)

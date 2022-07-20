@@ -1,0 +1,9 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#appMenu-popup,
+menupopup {
+  border-radius: 0px !important;
+  --panel-border-radius: 0px !important;
+}

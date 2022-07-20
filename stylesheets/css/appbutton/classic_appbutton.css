@@ -10,7 +10,7 @@
   --appbuttontextshadowcolor: #000000;
 }
 
-#button-appmenu:not(:hover):not(:active):not([open]){
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):not(:hover):not(:active):not([open]){
   appearance: none !important;
   background: linear-gradient(var(--appbuttoncolor1), var(--appbuttoncolor2) 95%) !important;
   transition: unset !important;
@@ -25,7 +25,7 @@
 			  1px 0 0 0px rgba(255,255,255,.6),
 			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
-#button-appmenu:hover:not(:active):not([open]){
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):hover:not(:active):not([open]){
   appearance: none !important;
   background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
@@ -40,9 +40,9 @@
 			  1px 0 0 0px rgba(255,255,255,.6),
 			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
-#button-appmenu:active,
-#button-appmenu:hover:active,
-#button-appmenu[open] {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):active,
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):hover:active,
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu)[open] {
   appearance: none !important;
   background: radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.5) 10%, hsla(0,0%,100%,0) 70%),
 			  radial-gradient(farthest-side at center bottom, hsla(0,0%,100%,.7), hsla(0,0%,100%,0)),
@@ -56,7 +56,7 @@
 			  1px 0 0 0px rgba(255,255,255,.6),
 			  -1px 0 0 0px rgba(255,255,255,.6) !important;
 }
-#button-appmenu {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) {
   appearance:none !important;
   transition: unset !important;
   background-clip: padding-box !important;
@@ -70,46 +70,46 @@
   border-left: 1px solid !important;
   border-bottom: 1px solid !important;
 }
-#button-appmenu:not(:is(:hover:active,[open])) {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):not(:is(:hover:active,[open])) {
   border-radius: 3px !important;
 }
-#button-appmenu:is(:hover:active,[open]) {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):is(:hover:active,[open]) {
   border-radius: 3px 3px 0 0 !important;
 }
 
-#tabs-toolbar #button-appmenu:not(:is(:hover:active,[open])),
-#tabs-toolbar #button-appmenu:is(:hover:active,[open]) {
+#tabs-toolbar :is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):not(:is(:hover:active,[open])),
+#tabs-toolbar :is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu):is(:hover:active,[open]) {
   border-radius: 3px 3px 0 0 !important;
   margin-inline-start: 0px !important;
 }
 
 
-#button-appmenu .toolbarbutton-menu-dropmarker {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-menu-dropmarker {
   display: -moz-box !important;
 }
 
 /*
-#button-appmenu .toolbarbutton-menu-dropmarker::before {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-menu-dropmarker::before {
   display: -moz-box !important; 
   content: var(--appbuttonlabel) !important;
   padding-inline-end: 4px !important;
 }*/
 
-#button-appmenu::after {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu)::after {
   display: -moz-box !important; 
   content: var(--appbuttonlabel) !important;
   margin-inline-start: -18px !important;
 }
 
-#button-appmenu .toolbarbutton-text {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-text {
   display: none !important;
 }
 
-#button-appmenu .toolbarbutton-icon {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-icon {
   opacity: 0 !important;
 }
 /*
-#button-appmenu .toolbarbutton-menu-dropmarker::before {
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-menu-dropmarker::before {
   margin-inline-start: -20px !important;
 }*/
 
@@ -117,7 +117,7 @@
   margin-bottom: 1px !important;
 }
 
-#mail-toolbar-menubar2 #button-appmenu{
+#mail-toolbar-menubar2 :is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) {
   position: absolute !important;
   margin-top: 0px !important;
   margin-inline-start: 0px !important;
