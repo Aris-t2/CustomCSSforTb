@@ -1,24 +1,25 @@
-/* Thunderbird userChrome.css tweaks ************************************************************/
-/* code mostly taken from 'CusomizeMyBird' add-ons **********************************************/
-/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
-/************************************************************************************************/
+/*===============================================================================
+  Thunderbird userChrome.css tweaks: main file
+  
+  Custom CSS for Thunderbird 102 ESR
+  Current version: 2.0.1
 
-/************************************************************************************************/
-/* Custom CSS for Thunderbird *******************************************************************/
-/* version 1.1.2 ********************************************************************************/
-/************************************************************************************************/
+  Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
+  Github: https://github.com/aris-t2/customcssfortb
+  Change-log: https://github.com/aris-t2/customcssfortb/commits/
 
-/*************************************************************************************************
-
-  Make sure 'toolkit.legacyUserProfileCustomizations.stylesheets' is set to 'true' or custom
-  styles will not be loaded. Settings/Options > Advanced > General > Config Editor...
-
-*************************************************************************************************/
-
-
-/*************************************************************************************************
-
+  
+  Thunderbird requires the following preference to be enabled for custom styles to be loaded:
+  
+    Settings/Options > Advanced > General > Config Editor...
+	toolkit.legacyUserProfileCustomizations.stylesheets > true'
+  
+  ===============================================================================
+  
+  ======
   README
+  ======
+
   
   Thunderbird profile folder:
   (Windows) C:\Users\<NAME>\AppData\Roaming\Thunderbird\Profiles\<PROFILE>\
@@ -34,50 +35,100 @@
   \chrome\userChrome.css
   \chrome\userContent.css
 
-  ENABLING options: remove the combination of / and * before '@import'
-  DISABLING options: add the combination of / and * before '@import'
+  ENABLING/DISABLING options:
+  To activate an option: remove /* before @import
+  To deactivate an option: add /* before @import
   
 
-*************************************************************************************************/
+*/
+
+/* =====================================
+   MAIN CONFIG FILE - controls variables
+   =====================================
+   
+   [!] set global variables for font and tab size options and more inside target file 
+*/
+
+@import "./config/config.css"; /**/
 
 
-/* MAIN CONFIG FILE - controls variables ********************************************************/
-/* @import "./config/config.css"; /**/
+/* ==============
+   TAB appearance
+   ==============
+   
+   [!] only use one option at a time
+   [!] custom tab colors are set inside color_variablesXXX.css file(s)
+   
+*/
 
-
-/* TABS *****************************************************************************************/
-
-/* Tab appearance - [only use one at a time] ****************************************************/
 @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_aero.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_glass1.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_glass2.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_glass3.css"; /**/
 
-/* Tabs height and borders **********************************************************************/
+
+/* -----------------------
+   Tabs height and borders
+   -----------------------
+*/
+
 /* @import "./css/tabs/tab_height.css"; /**/
 /* @import "./css/tabs/tab_border_radius.css"; /**/
 
 
-/* BUTTONS **************************************************************************************/
+/* =======
+   BUTTONS
+   =======
+*/
 
-/* Classic button appearance ********************************************************************/
+/* -------------------------
+   Classic button appearance
+   -------------------------
+*/
+
 @import "./css/buttons/ctb_on_main_toolbars.css"; /**/
 /* @import "./css/buttons/ctb_on_menubar.css"; /**/
 /* @import "./css/buttons/ctb_on_tabstoolbar.css"; /**/
 
-/* Button size **********************************************************************************/
+
+/* -----------
+   Button size
+   -----------
+*/
+
 /* @import "./css/buttons/ctb_button_size_main_toolbars.css"; /**/
 /* @import "./css/buttons/ctb_button_size_menubar.css"; /**/
 
-/* Buttons on tabs toolbar - [only use one at a time] *******************************************/
+
+/* -----------------------
+   Buttons on tabs toolbar
+   -----------------------
+   
+   [!] only use one option at a time
+
+*/
+
 /* @import "./css/buttons/tab_toolbar_buttons_before_tabs.css"; /**/
 /* @import "./css/buttons/tab_toolbar_buttons_hidden.css"; /**/
 
-/* Icon settings ********************************************************************************/
+
+/* -------------
+   Icon settings
+   -------------
+*/
+
 /* @import "./css/buttons/reduce_icon_size_on_hover.css"; /**/
 
-/* Icon sets - [only use one at a time] *********************************************************/
+
+/* ---------
+   Icon sets
+   ---------
+   
+   [!] only use one option at a time
+   
+*/
+
 /* @import "./css/buttons/tb_icons_tb1.css"; /**/
 /* @import "./css/buttons/tb_icons_tb2.css"; /**/
 /* @import "./css/buttons/tb_icons_tb3.css"; /**/
@@ -90,12 +141,29 @@
 /* @import "./css/buttons/tb_icons_noia_small.css"; /**/
 /* @import "./css/buttons/tb_icons_noia_tiny.css"; /**/
 
-/* Other buttons settings ***********************************************************************/
+
+/* ----------------------
+   Other buttons settings
+   ----------------------
+*/
+
 /* @import "./css/buttons/button_popup_panelarrow_hidden.css"; /**/
 
-/* APPBUTTON ************************************************************************************/
 
-/* Appbutton appearance - [only use one at a time] **********************************************/
+
+/* =========
+   APPBUTTON
+   =========
+*/
+
+/* -------------------
+   Appbutton appearance
+   -------------------
+   
+   [!] only use one option at a time
+   
+*/
+
 @import "./css/appbutton/classic_appbutton.css"; /**/
 /* @import "./css/appbutton/classic_appbutton_icon_only.css"; /**/ /* default toolbar button icon */
 /* @import "./css/appbutton/classic_appbutton_icon_only_white.css"; /* white bird */
@@ -104,67 +172,145 @@
 /* @import "./css/appbutton/classic_appbutton_icon_only_old1.css"; /* old Thunderbird icon */
 /* @import "./css/appbutton/classic_appbutton_icon_only_old2.css"; /* old Thunderbird icon v2 */
 /* @import "./css/appbutton/classic_appbutton_icon_only_current.css"; /* current Thunderbird icon */
+/* @import "./css/appbutton/appbutton_hidden.css"; /* hide App/Thunderbird button */
 
 
-/* GENERAL THUNDERBIRD APPEARANCE ****************************************************************/
 
-/* Toolbar appearance - [only use one at a time] *************************************************/
+/* ==============================
+   GENERAL THUNDERBIRD APPEARANCE
+   ==============================
+*/
+
+/* ------------------
+   Toolbar appearance
+   ------------------
+   
+   [!] only use one option at a time
+   
+*/
+
 /* @import "./css/general/toolbar_and_ui_appearance_default.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_aero.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass1.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass2.css"; /**/
 /* @import "./css/general/toolbar_and_ui_appearance_glass3.css"; /**/
-@import "./css/general/toolbar_and_ui_appearance_lwtheme_extra.css"; /**/
 
-/* Attachmentbox *********************************************************************************/
+
+/* --------------
+   Attachment-Box
+   --------------
+*/
+
 @import "./css/general/attachmentbox_above_mail_content.css"; /**/
 @import "./css/general/attachmentbox_at_toolbars_start.css"; /**/
 
-/* Main window ***********************************************************************************/
+
+/* -----------
+   Main window
+   -----------
+*/
+
 /* @import "./css/general/window_header_colors.css"; /**/
 /* @import "./css/general/mail_panel_color.css"; /**/
+/* @import "./css/general/mail_panel_tree_colors.css"; /**/
 /* @import "./css/general/increase_row_height.css"; /**/
 /* @import "./css/general/transparent_mail_header.css"; /**/
 
-/* Tree columns appearance - [only use one at a time] ********************************************/
+
+/* -----------------------
+   Tree columns appearance
+   -----------------------
+   
+   [!] only use one option at a time
+
+*/
+
 /* @import "./css/general/tree_columns_appearance.css"; /**/
 /* @import "./css/general/tree_columns_appearance_aero.css"; /**/
 
-/* Compose window - Bold, Italic, Underlined icons ***********************************************/
+
+/* -----------------------------------------------
+   Compose window - Bold, Italic, Underlined icons
+   -----------------------------------------------
+*/
+
 @import "./css/general/write_window_replace_aaa_icons_with_biu_icons.css"; /**/
 
-/* Quickfilter toolbar settings ******************************************************************/
+
+/* ----------------------------
+   Quickfilter toolbar settings
+   ----------------------------
+*/
+
 /* @import "./css/general/quickfilterbar_at_the_bottom.css"; /**/
 
-/* Quickfilter button mode - [only use one at a time] ********************************************/
+
+/* -----------------------
+   Quickfilter button mode
+   -----------------------
+   
+   [!] only use one option at a time
+
+*/
+
 /* @import "./css/general/quickfilterbar_text_only.css"; /**/
 /* @import "./css/general/quickfilterbar_icons_only.css"; /**/
 /* @import "./css/general/quickfilterbar_icons_and_text.css"; /**/
 
-/* Menubar appearance and position - [only use one at a time] ************************************/
+
+/* -------------------------------
+   Menubar appearance and position
+   -------------------------------
+   
+   [!] only use one option at a time
+
+*/
+
 /* @import "./css/general/menubar_above_tabs.css"; /**/
 /* @import "./css/general/menubar_below_tabs.css"; /**/
 /* @import "./css/general/menubar_below_tabs_aero.css"; /**/
 /* @import "./css/general/menubar_below_tabs_with_border.css"; /**/
 /* @import "./css/general/menubar_below_tabs_with_border_aero.css"; /**/
 
-/* Hide items ************************************************************************************/
+
+/* -------------------
+   Menupoup appearance
+   -------------------
+
+*/
+
+/* @import "./css/general/menupopup_squared_borders.css"; /**/
+
+/* ----------
+   Hide items
+   ----------
+*/
+
 /* @import "./css/general/statusbar_hidden.css"; /**/
 /* @import "./css/general/mail_tree_folder_icons_hidden.css"; /**/
 /* @import "./css/general/mail_list_scrollbars_hidden.css"; /**/
 
-/* Icon sets for folder area - [only use one at a time] *****************************************/
-/* [!] issues with some icons */
+
+/* -------------------------------
+   Icon sets for folder area
+   -------------------------------
+   
+   [!] only use one option at a time
+   [!] issues with some icons
+
+*/
+
 /* @import "./css/general/foldericons_tb1.css"; /**/
 /* @import "./css/general/foldericons_tb2.css"; /**/
 /* @import "./css/general/foldericons_tb3.css"; /**/
 /* @import "./css/general/foldericons_tb3_strata.css"; /**/
 
 
-/************************************************************************************************/
-/************************************************************************************************/
-/* Create a new file "my_userChrome.css" and add own/custom code to it. *************************/
+/* ---------------------
+   Custom / own CSS code
+   ---------------------
+   
+   [!] Create a "my_userChrome.css" file and add own/custom code to it.
+*/
+
 @import "./my_userChrome.css"; /**/
-/************************************************************************************************/
-/************************************************************************************************/
-/************************************************************************************************/
