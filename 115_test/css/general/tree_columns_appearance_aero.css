@@ -1,0 +1,31 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+/* tree columns */
+treecol,
+treecolpicker {
+  appearance: none !important;
+  background-image: linear-gradient(to top, #ddeaf9, #f5f7fa) !important;
+  border-bottom: 1px solid #a9b7c9 !important;
+  color: black !important;
+}
+
+treecol {
+  border-right: 1px solid #a9b7c9 !important;
+}
+
+treecol:hover,
+treecolpicker:hover{
+  background-image: linear-gradient(to bottom, #e3f7ff, #b7e7fb) !important;
+}
+
+treecol:hover:active,
+treecolpicker:hover:active {
+  background-image: linear-gradient(to bottom, #bdedff, #8ad1f5) !important;
+}
+
+.treecol-image {
+  padding: 0 !important;
+  padding-top: 4px !important;
+}

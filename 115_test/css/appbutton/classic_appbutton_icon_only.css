@@ -1,0 +1,16 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./classic_appbutton.css";
+
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu)::after,
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-menu-dropmarker,
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-menu-dropmarker::before,
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-text {
+  display: none !important;
+}
+
+:is(#button-appmenu,#calendar-appmenu-button,#button-chat-appmenu) .toolbarbutton-icon {
+  opacity: 1.0 !important;
+}

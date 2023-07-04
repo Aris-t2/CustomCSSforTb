@@ -1,0 +1,28 @@
+/* Thunderbird userContent.css tweaks ***********************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@import "./addons_manager_alternative_appearance.css";
+
+@-moz-document url-prefix(about:addons),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.html),
+	url-prefix(chrome://mozapps/content/extensions/aboutaddons.xhtml) {
+
+	#sidebar,
+	#addons-page {
+	  background: #edf6ff !important;
+	}
+	
+	:root{
+	  --in-content-page-background: #edf6ff !important;
+	}
+	
+	body > div#full {
+	  background: #edf6ff !important;
+	}
+
+	.sticky-container {
+	  background: #edf6ff !important;
+	}
+
+}

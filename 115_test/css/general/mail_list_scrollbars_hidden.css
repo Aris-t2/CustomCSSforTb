@@ -1,0 +1,12 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+scrollbar, scrollcorner {
+  opacity: 0 !important;
+  /*display: none !important;*/
+  visibility: collapse !important;
+  min-width: 1px !important;
+  width: 1px !important;
+  max-width: 1px !important;
+}

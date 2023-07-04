@@ -1,0 +1,9 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#spacesToolbar,
+#spacesPinnedButton,
+#spacesToolbarReveal {
+  display: none !important;
+}

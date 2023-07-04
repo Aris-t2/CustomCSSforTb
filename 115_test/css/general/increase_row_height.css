@@ -1,0 +1,7 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+treechildren::-moz-tree-row {
+  min-height: 28px !important;
+}

@@ -1,0 +1,44 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+
+:root {
+  --mailpaneltree_row_even_background_color: #b1ccfd;
+  --mailpaneltree_row_odd_background_color: #e8f0ff;
+  --mailpaneltree_row_selected_background_color: Highlight;
+  --mailpaneltree_row_unread_background_color: #a6b2ca;
+  --mailpaneltree_row_selected_text_color: HighlightText;
+  --mailpaneltree_row_unread_text_color: #000000;
+}
+
+treechildren::-moz-tree-row(even),
+treechildren:hover::-moz-tree-row(even) {
+  background-color: var(--mailpaneltree_row_even_background_color) !important;
+}
+treechildren::-moz-tree-row(odd),
+treechildren:hover::-moz-tree-row(odd) {
+  background-color: var(--mailpaneltree_row_odd_background_color) !important;
+}
+treechildren::-moz-tree-row(selected),
+treechildren:hover::-moz-tree-row(selected) {
+  background-color: var(--mailpaneltree_row_selected_background_color) !important;
+}
+treechildren::-moz-tree-row(selected, focus),
+treechildren:hover::-moz-tree-row(selected, focus) {
+  background-color: var(--mailpaneltree_row_selected_background_color) !important;
+}
+treechildren::-moz-tree-cell-text(selected),
+treechildren:hover::-moz-tree-cell-text(selected),
+treechildren::-moz-tree-cell-text(selected, focus),
+treechildren:hover::-moz-tree-cell-text(selected, focus) {
+  color: var(--mailpaneltree_row_selected_text_color) !important;
+}
+treechildren::-moz-tree-cell(unread),
+treechildren::-moz-tree-cell(unread,selected) {
+  background-color: var(--mailpaneltree_row_unread_background_color) !important;
+}
+treechildren:-moz-tree-cell-text(unread) {
+  color: var(--mailpaneltree_row_unread_text_color) !important;
+  font-style: italic !important;
+}

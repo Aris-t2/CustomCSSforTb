@@ -1,0 +1,108 @@
+/*===============================================================================
+  Thunderbird userCotent.css tweaks: main file
+  
+  Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
+  Github: https://github.com/aris-t2/customcssfortb
+  Change-log: https://github.com/aris-t2/customcssfortb/commits/
+
+  
+  Thunderbird requires the following preference to be enabled for custom styles to be loaded:
+  
+    Settings/Options > Advanced > General > Config Editor...
+	toolkit.legacyUserProfileCustomizations.stylesheets > true'
+
+  ===============================================================================
+  
+  ======
+  README
+  ======
+  
+  Thunderbird profile folder:
+  (Windows) C:\Users\<NAME>\AppData\Roaming\Thunderbird\Profiles\<PROFILE>\
+  (Linux) /home/<NAME>/.mozilla/thunderbird/<PROFILE>/
+  (macOS) ~\Library\Mozilla\Thunderbird\Profiles\<PROFILE>\ or
+     ~\Library\Application Support\Mozilla\Thunderbird\Profiles\<PROFILE>\ or
+     \Users\<NAME>\Library\Application\Support\Thunderbird\Profiles\<PROFILE>
+  
+  CSS files and sub-folders belong into \<PROFILE>\chrome\ directory.
+  \chrome\config\
+  \chrome\css\
+  \chrome\images\
+  \chrome\userChrome.css
+  \chrome\userContent.css
+  
+  ENABLING/DISABLING options:
+  To activate an option: remove /* before @import
+  To deactivate an option: add /* before @import
+
+*/
+
+/* -------------------------
+   Classic button appearance
+   -------------------------
+*/
+
+/* affects address book, chat ...*/
+@import "./css/buttons/ctb_on_main_toolbars.css"; /**/
+
+
+/* ============================
+   ADDON MANAGER (about:addons)
+   ============================
+
+*/
+
+/* ------------------------------------
+   Addon manager alternative appearance
+   ------------------------------------
+   
+   [!] only use one option at a time
+
+*/
+
+@import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
+/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/
+
+/* --------------------------------------------
+   Compact addon manager alternative appearance
+   --------------------------------------------
+   
+   [!] only use one option at a time
+
+*/
+
+/* @import "./css/aboutaddons/addonlists_compact.css"; /**/
+/* @import "./css/aboutaddons/addonlists_compact_more_compact.css"; /**/
+
+@import "./css/aboutaddons/addonlists_show_addon_version_number.css"; /**/
+
+
+/* -------------------------------------
+   Show version number after add-on name
+   -------------------------------------
+
+*/
+
+@import "./css/aboutaddons/recentupdates_category_always_visible.css"; /**/
+
+
+/* ===============================
+   PREFERENCES (about:preferences)
+   ===============================
+   
+   [!] only use one option at a time
+
+*/
+
+@import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
+/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/
+
+
+/* ---------------------
+   Custom / own CSS code
+   ---------------------
+   
+   [!] Create a "my_userContent.css" file and add own/custom code to it.
+*/
+
+@import "./my_userContent.css"; /**/

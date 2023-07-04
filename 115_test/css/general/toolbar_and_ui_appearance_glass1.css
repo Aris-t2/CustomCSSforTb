@@ -1,0 +1,351 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+@media all and (-moz-windows-compositor) {
+
+	#messengerWindow tabpanels{
+		border:0 !important;
+	}
+
+	#messengerWindow statusbar{
+		appearance: -moz-win-borderless-glass !important;
+		background: transparent !important;
+	}
+
+	#menubar-items {
+		background-color: transparent !important;
+	}
+	
+	menubar{
+		appearance: -moz-win-glass !important;
+		background-color: transparent !important;
+	}
+	
+	#tabs-toolbar,
+	#tabs-toolbar::before,
+	#tabs-toolbar::after{
+		box-shadow: none !important;
+	}
+
+	#sidebars-titlebutton,sidebarheader,#sidebar,#historyTree,window:not(#messengerWindow) tree,#bookmarksPanel,
+	bookmarks-tree tree,#history-panel,#aios-toolbar,toolbox,#vertical-toolbar{
+		background:none !important;
+		border:0 !important;
+		appearance: none !important;
+	}
+
+	textbox#urlbar, .searchbar-textbox{
+		opacity: .9;
+	}
+	
+	textbox:not(#urlbar):not(.searchbar-textbox){
+		opacity: .7 !important;
+	}
+
+	menuseparator{
+		opacity: .0;
+	}
+
+	tooltip {
+		appearance: none !important;
+		border: none !important;
+		text-shadow: #000000 2px 2px 2px !important;
+		color: #FFFFFF !important;
+		background-color: rgba(0,0,0,0.20) !important;
+		border-radius:5px;
+	}
+
+	.statuspanel-label {
+		appearance: none !important;
+		text-shadow: #000000 2px 2px 2px !important;
+		color: #FFFFFF !important;
+		background: rgba(0,0,0,0.6) !important;
+		border-radius:5px;
+	}	
+	
+	groupbox{
+		appearance: none !important;
+		background: linear-gradient(rgba(255,255,255,.5), rgba(255, 255, 255, .6),rgba(255,255,255,.7))!important;
+		border: 1px solid rgba(255,255,255,.6) !important;
+	}
+
+	caption{
+		appearance: none !important;
+		background: linear-gradient(rgba(255,255,255,.7), rgba(255, 255, 255, .8),rgba(255,255,255,.9))!important;
+		border-radius: 3px !important;
+		border: 1px solid rgba(255,255,255,.6) !important;
+	}
+
+	window:not(#messengerWindow):not(#aboutDialog),
+	#SignonViewerDialog,#rejectedsites,
+	dialog tabpanels,prefwindow tabpanels,
+	prefwindow,prefpane,dialog,richlistbox:not(#categories){
+		appearance: -moz-win-borderless-glass !important;
+		background: linear-gradient(rgba(255,255,255,.4), rgba(255, 255, 255, .5),rgba(255,255,255,.6))!important;
+	}
+
+	#main-window[stylish-url="about:blank"]:not([onclose="PrintUtils.exitPrintPreview(); return false;"]) #content browser { 
+		opacity: 0 !important;
+		border: 0 !important;
+		background-color:transparent!important;
+	}
+
+	#appcontent,#content > tabbox > tabpanels {
+		background-color: transparent !important;
+	}
+
+	radiogroup,toolbar:not(:-moz-lwtheme),#browser-bottombox:not(:-moz-lwtheme){
+		appearance: none !important;
+		background: none !important;
+		border: none !important;
+	}
+
+	radio[pane]{
+		border-radius: 3px !important;
+	}
+
+	tab:not(.tabmail-tab){
+		appearance: none !important;
+		background: linear-gradient(rgba(255,255,255,.2), rgba(255, 255, 255, .4),rgba(255,255,255,.7))!important;
+		border: 1px solid rgba(255,255,255,.4) !important;
+		border-radius: 3px !important;
+	}
+
+	radio[pane]:hover, tab:not(.tabmail-tab):hover{
+		background: linear-gradient(rgba(255,255,255,.3), rgba(255, 255, 255, .5),rgba(255,255,255,.8))!important;
+		box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
+		 0 0 2px 1px hsla(0,0%,100%,.25) inset !important;
+	}
+
+	radio[pane][selected=true], tab:not(.tabmail-tab)[selected=true]{
+		background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255, .6),rgba(255,255,255,.8)) !important;
+		box-shadow: 0 1px 0 hsla(0,0%,100%,.2) inset,
+		 0 0 2px 1px hsla(0,0%,100%,.25) inset !important;
+	}
+
+	#sync-notifications{
+		box-shadow: none !important;
+		background-color: RGBa(255,255,127,.1) !important;}
+
+	notification {
+		appearance: none !important;
+		background-color: RGBa(255,255,127,.5) !important;
+		background-image: url("chrome://mozapps/skin/extensions/stripes-warning.png") !important;
+		background-repeat: repeat-x !important;
+		font-weight: bold !important;
+		color: #916D15 !important;
+		text-shadow: RGBa(255,255,255,.8) 1px 1px 9px, RGBa(255,255,255,.8) -1px 1px 9px, RGBa(255,255,255,.8) 1px -1px 9px, RGBa(255,255,255,.8) -1px -1px 9px !important;}
+
+	notification[type="critical"] {
+		background-color: RGBa(255,63,63,.5) !important;
+		background-image: url("chrome://mozapps/skin/extensions/stripes-error.png") !important;
+		color: #864441 !important;}
+
+	notification[type="info"]  {
+		background-color: RGBa(112,162,232,.5) !important;
+		background-image: url("chrome://mozapps/skin/extensions/stripes-info-negative.png") !important;
+		color: #3F3F3F !important;}
+
+	notification > * {
+		border: none !important;
+		border-top: 1px solid RGBa(0,0,0,.37) !important;
+		border-bottom: 1px solid RGBa(0,0,0,.37) !important;
+	}
+
+	#sync-notifications notification > * {
+		border-bottom: none !important;
+	}
+
+	#content notification > *{
+		border-top: none !important;
+	}
+
+	/* bookmark/places manager*/
+	#placesView, window:not(:-moz-lwtheme), #bookmarksPanel, #defaultView,
+	#placeContent, #placesMenu, #placesList, #placesToolbox, #placesToolbar,
+	#searchModifiers, #infoPaneBox{
+		appearance: -moz-win-glass !important; 
+		background: rgba(184,194,196, .1) !important;
+	}
+
+	#bookmarksPanel, #defaultView, #placeContent, #placesMenu, #placesList,
+	#placesToolbox, #placesToolbar, #infoPaneBox, .menu-iconic{ 
+		color: #333 !important;
+		opacity: .99 !important; 
+	}
+
+	.menu-iconic{
+		appearance: none !important;
+		text-shadow: 0px 0px 6px white, 0px 0px 8px white !important;
+	}
+
+	treecol{
+		appearance: none !important;
+		background: rgba(165,177,192, 0.1) !important; 
+		outline: 0 none !important;
+		border: 0 none !important;
+	}
+
+	treecol:hover {
+		color: black !important;
+		text-shadow: white 1px 1px 1px !important;
+	}
+
+	#placesToolbar, #placesToolbox {
+		border: 0 none !important;
+	}
+
+	#placesView splitter{ 
+		appearance: none !important;
+		width: 8px !important; 
+		margin-top: 30px !important;
+		background: transparent !important; 
+		border: none !important;
+	}
+
+	#placeContent scrollbar, #placesList scrollbar{
+		appearance: none !important;
+		background: transparent !important;
+	}
+
+	#infoPaneBox{
+		border-top: none !important;
+	}
+
+	/*#About Dialog*/
+	#aboutDialogContainer #clientBox,
+	#aboutDialog #bottomBox{
+		appearance: -moz-win-borderless-glass !important;
+		background: transparent !important;
+	}
+	#aboutDialog{
+		appearance: -moz-win-borderless-glass !important;
+		background: transparent url("chrome://branding/content/about-logo.png") 7% 26% no-repeat !important;
+	}
+	#aboutDialogContainer {
+		appearance: -moz-win-borderless-glass !important;
+		background: transparent !important;
+	}
+	#aboutDialogContainer,
+	#aboutDialog{
+		color: black !important;
+		text-shadow: 0px 0px 8px white, 0px 0px 8px white, 0px 0px 8px white !important;
+	}
+	#aboutDialogContainer .text-link,
+	#aboutDialog .text-link{
+		color: #0077d5 !important;
+	}
+	
+	/* download manager*/
+	#downloadManager{
+		background-color: rgba(255, 0, 0, 0.0) !important;
+		appearance: -moz-win-glass !important;
+	}
+
+	#downloadView{
+		background: rgba(50, 50, 50, 0.1) !important;
+		color: black !important;
+		text-shadow: white 0px 0px 3px, white 0px 0px 8px, white 0px 0px 12px !important;
+		opacity: 0.99 !important;
+		border-radius: 8px 8px 0px 0px !important;
+	}
+
+	richlistbox#downloadView richlistitem {
+		appearance: none !important;
+		border: solid 1px rgb(120, 120, 120) !important;
+		border-radius: 6px !important;
+		margin-left: 6px !important;
+		margin-right: 6px !important;
+		margin-top: 3px !important; 
+		margin-bottom: 3px !important;
+		background: rgba(255, 255, 255, 0.1) !important;
+	}
+
+	richlistbox#downloadView richlistitem:hover{
+		border: solid 1px rgb(190, 190, 190) !important;
+		text-shadow: white 0px 0px 3px,
+			white 0px 0px 8px,
+			white 0px 0px 8px,
+			white 0px 0px 8px,
+			white 0px 0px 18px !important;
+		background: rgba(255, 255, 255, 0.2) !important;
+	}
+
+	richlistbox#downloadView richlistitem[current="true"]  {
+		border: solid 1px rgb(255, 255, 255) !important;
+		background: rgba(230, 240, 255, 0.6) !important;
+		outline: none !important;
+		color: rgb(30, 50, 100) !important;
+		text-shadow:	rgb(210, 210, 255) 0px 0px 3px, 
+			rgb(210, 210, 255) 0px 0px 8px, 
+			rgb(210, 210, 255) 0px 0px 8px, 
+			rgb(210, 210, 255) 0px 0px 8px, 
+			rgb(210, 210, 255) 0px 0px 18px !important;
+	}
+	
+	.chromeclass-status:not(:-moz-lwtheme) statusbarpanel,
+	.chromeclass-status:not(:-moz-lwtheme) .statusbar-resizerpanel,
+	#messengerWindow:not(:-moz-lwtheme) #status-bar statusbarpanel,
+	#messengerWindow:not(:-moz-lwtheme) #status-bar .statusbar-resizerpanel,
+	* #unifinder-searchBox,
+	* #task-addition-box,
+	* #calendar-nav-control,
+	* #mail-bar3.chromeclass-toolbar:not(:-moz-lwtheme),
+	* #quick-filter-bar{
+	  background:none !important;
+	}
+
+	@media (-moz-os-version: windows-win10) {
+		#titlebar-min .toolbarbutton-icon,
+		#titlebar-max .toolbarbutton-icon,
+		#titlebar-close:not(:hover) .toolbarbutton-icon{
+		  opacity: 0 !important;
+		}
+	}
+	
+	#messengerWindow #mail-bar3:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2[autohide="false"]:not(:-moz-lwtheme),
+	#messengerWindow #navigation-toolbox[class="toolbox-top"] #mail-toolbar-menubar2:not(:-moz-lwtheme) {
+	  appearance: none !important;
+	  background: none !important;
+	}
+	
+	.today-subpane,#buttonspacer,#today-pane-panel,#agenda-panel,
+	#todo-tab-panel,#mini-day-box,#today-minimonth-box,
+	#weekdayNameContainer,daypicker,#event-menubar,#event-toolbar,
+	#calendar-task-tree, #today-pane-splitter,
+	daypicker[mode="monthly-days"],
+	#task-actions-category,sidebarheader,
+	#messengerWindow[sizemode=normal] #today-pane-panel,
+	#calsidebar_splitter,#today-pane-panel sidebarheader,
+	#today-pane-panel .folderview-cycler,
+	#calsidebar,#event-toolbox,
+	#calendar-list-overlay,#suiteSidebarOverlay,
+	#mailContext-calendar-convert-menu,
+	#markMenu,#task-tree-filtergroup,#tabTitleTasks,
+	#tabmail-container,#status-bar,
+	#calsidebar_splitter,#calendar-invitations-panel,
+	#mail-menubar,#calendarTabPanel,
+	#ltnTasksMenu,sidebar,
+	#ltnCalendarMenu,#ltnSidebarOverlay,#calendar-tab-button,
+	#task-tab-button,#lightning-button-calendar,
+	#lightning-button-tasks,lightning-notification-bar,#lightning-newCalendar-row,
+	table,#calendar-panel,#imip-bar,#calMinimonthBox,
+	#today-splitter,#calendar-status-todaypane-button,
+	#calsidebar_splitter,#calMinimonthBox{
+	  appearance: -moz-win-borderless-glass !important;
+	  background: none !important;
+	}
+	
+	/* toolbar text */
+	* #mail-menubar:not(:-moz-lwtheme) > menu > label,
+	#messengerWindow toolbar:not(:-moz-lwtheme):not(#tabs-toolbar):not(#folderPane-toolbar),
+	menubar > menu:not(:-moz-lwtheme),
+	statusbar:not(:-moz-lwtheme) label,
+	toolbox toolbarbutton:not(:-moz-lwtheme) > label{
+	  color: #FFFFFF !important;
+	  text-shadow: #000000 1px 1px 1.5px !important;
+	}
+
+}

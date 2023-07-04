@@ -1,0 +1,42 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+:root {
+  /* tab_height.css */
+  --tab-min-height: 26px !important;
+  
+  /* tab_border_radius.css */
+  --tabborderradius: 3px !important;
+  
+  /* window_header_colors.css */
+  --header_background_color: #202340 !important;
+  --header_text_color: #ffffff !important;
+  --header_caption_button_color: rgba(255,255,255,0.3) !important;
+  
+  /* mail_panel_color.css */
+  --mailpanel_background_color: #ffffff !important;
+  --mailpanel_text_color: #000000 !important;
+  
+  /* mail_panel_tree_colors.css */
+  --mailpaneltree_row_even_background_color: #b1ccfd !important;
+  --mailpaneltree_row_odd_background_color: #e8f0ff !important;
+  --mailpaneltree_row_selected_background_color: Highlight !important;
+  --mailpaneltree_row_unread_background_color: #a6b2ca !important;
+  --mailpaneltree_row_selected_text_color: HighlightText !important;
+  --mailpaneltree_row_unread_text_color: #000000 !important;
+
+  /* classic_appbutton.css */
+  --appbuttonlabel: "Thunderbird" !important;
+  --appbuttoncolor1: #33CCFF !important;
+  --appbuttoncolor2: #3366FF !important;
+  --appbuttontextcolor: #FFFFFF !important;
+  --appbuttontextshadowcolor: #000000 !important;
+  
+  /* ctb_button_size_main_toolbars.css */
+  --ctb_maintoolbar_button_height: 0px !important;
+  --ctb_maintoolbar_button_width: 0px !important;
+  
+  /* ctb_button_size_menubar.css */
+  --ctb_menubar_button_height: 0px !important;
+  --ctb_menubar_button_width: 0px !important;
+}
