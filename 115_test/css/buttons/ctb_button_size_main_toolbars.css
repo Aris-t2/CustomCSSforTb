@@ -7,10 +7,11 @@
   --ctb_maintoolbar_button_width: 0px;
 }
 
-.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-button,
-.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
-.chromeclass-toolbar:not(#tabs-toolbar) .toolbarbutton-1,
-.chromeclass-toolbar:not(#tabs-toolbar) #button-appmenu {
+.unified-toolbar-button,
+.chromeclass-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
+.chromeclass-toolbar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+.chromeclass-toolbar .toolbarbutton-1,
+.chromeclass-toolbar #button-appmenu {
 	min-height: var(--ctb_maintoolbar_button_height) !important;
 	min-width: var(--ctb_maintoolbar_button_width) !important;
 }

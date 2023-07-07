@@ -1,7 +1,0 @@
-/* Thunderbird userChrome.css tweaks ************************************************************/
-/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
-
-
-#tabbar-toolbar toolbarbutton:not(#button-appmenu) {
-  visibility: collapse !important;
-}

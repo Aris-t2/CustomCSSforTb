@@ -2,24 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-#mailContent:not([layout="standard"]) #displayDeck{
-  -moz-box-ordinal-group: 0 !important;
-}
-
-#mailContent:not([layout="standard"]) #quick-filter-bar{
-  -moz-box-ordinal-group: 1 !important;
-}
-
-#mailContent:not([layout="standard"]) #messagepaneboxwrapper{
-  -moz-box-ordinal-group: 2 !important;
-}
-
-#mailContent[layout="standard"] #displayDeck{
-  -moz-box-ordinal-group: 0 !important;
-}
-
-#mailContent[layout="standard"] #quick-filter-bar{
-  -moz-box-ordinal-group: 100 !important;
+#quick-filter-bar{
+  order: 100 !important;
 }
 
 #quick-filter-bar {

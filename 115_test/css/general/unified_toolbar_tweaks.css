@@ -1,0 +1,14 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+/* disable toolbar size jumping in TB 115+ */
+.unified-toolbar {
+  min-height: 32px !important;
+}
+.icons-above-text .unified-toolbar {
+  min-height: 48px !important;
+}
+.unified-toolbar-button {
+  gap: 0px !important;
+}

@@ -3,5 +3,5 @@
 
 
 #attachment-view-toolbox{
-  -moz-box-ordinal-group: 0 !important;
+  order: -1 !important;
 }

@@ -3,7 +3,7 @@
 
 :root {
   /* tab_height.css */
-  --tab-min-height: 26px !important;
+  --tab-min-height: 28px !important;
   
   /* tab_border_radius.css */
   --tabborderradius: 3px !important;
