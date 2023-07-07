@@ -1,0 +1,19 @@
+/* Thunderbird userChrome.css tweaks ************************************************************/
+/* Github: https://github.com/aris-t2/customcssfortb ********************************************/
+
+
+#titlebar unified-toolbar {
+  order: -10 !important;
+}
+
+#titlebar #toolbar-menubar {
+  order: -8 !important;
+}
+
+#titlebar #tabs-toolbar {
+  order: -9 !important;
+}
+
+#unifiedToolbarContent {
+  padding-inline-start: 0 !important;
+}

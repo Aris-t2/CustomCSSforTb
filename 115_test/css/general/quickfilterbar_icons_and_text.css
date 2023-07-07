@@ -2,12 +2,7 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-#quick-filter-bar toolbarbutton:not(#qfb-sticky) .toolbarbutton-icon {
-  display: block !important;
-  visibility: visible !important;
-}
-
-#quick-filter-bar toolbarbutton:not(#qfb-sticky) .toolbarbutton-text {
-  display: inline !important;
-  visibility: visible !important;
-}
+  .button.collapsible-button span {
+    visibility: visible !important;
+    width: unset !important;
+  }

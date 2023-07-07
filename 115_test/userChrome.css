@@ -1,10 +1,10 @@
 /*===============================================================================
   Thunderbird userChrome.css tweaks: main file
   
-  Custom CSS for Thunderbird 115 ESR
-  Current version: test 20230707
+  Custom CSS for Thunderbird 115
+  Current version: 3.0.0test
 
-  Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
+  Based on 'Classic Theme Restorer'. 'CustomizeMyBird' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssfortb
   Change-log: https://github.com/aris-t2/customcssfortb/commits/
 
@@ -46,33 +46,21 @@
    MAIN CONFIG FILE - controls variables
    =====================================
    
-   [!] set global variables for font and tab size options and more inside config.css 
+   [!] set global variables for font and tab size options and more inside config.css
 */
 
 @import "./config/config.css"; /**/
 
 
-/* ==============
-   TAB appearance
-   ==============
-   
-   [!] only use one option at a time
+/* =========================
+   TAB appearance / settings
+   =========================
    
 */
 
 /* @import "./css/tabs/classic_squared_tabs.css"; /**/
-/* @import "./css/tabs/classic_squared_tabs_aero.css"; /**/
-/* @import "./css/tabs/classic_squared_tabs_glass1.css"; /**/
-/* @import "./css/tabs/classic_squared_tabs_glass2.css"; /**/
-/* @import "./css/tabs/classic_squared_tabs_glass3.css"; /**/
-
-
-/* ------------------
-   Tab border radius
-   ------------------
-*/
-
 /* @import "./css/tabs/tab_border_radius.css"; /**/
+/* @import "./css/tabs/tab_tabline_hidden.css"; /**/
 
 
 /* =======
@@ -87,6 +75,7 @@
 
 @import "./css/buttons/ctb_on_main_toolbars.css"; /**/
 /* @import "./css/buttons/ctb_on_menubar.css"; /**/
+/* @import "./css/buttons/ctb_on_spacestoolbar.css"; /**/
 
 
 /* -----------
@@ -111,9 +100,9 @@
    =========
 */
 
-/* -------------------
+/* --------------------
    Appbutton appearance
-   -------------------
+   --------------------
    
    [!] only use one option at a time
    
@@ -136,25 +125,11 @@
    ==============================
 */
 
-/* --------------
+/* --------------------------------------------------------------------------
    Adjust toolbar height to stop height changes when switching to other tabs
-   --------------
+   --------------------------------------------------------------------------
 */
 @import "./css/general/unified_toolbar_tweaks.css"; /**/
-
-/* ------------------
-   Toolbar appearance
-   ------------------
-   
-   [!] only use one option at a time
-   
-*/
-
-/* @import "./css/general/toolbar_and_ui_appearance_default.css"; /**/
-/* @import "./css/general/toolbar_and_ui_appearance_aero.css"; /**/
-/* @import "./css/general/toolbar_and_ui_appearance_glass1.css"; /**/
-/* @import "./css/general/toolbar_and_ui_appearance_glass2.css"; /**/
-/* @import "./css/general/toolbar_and_ui_appearance_glass3.css"; /**/
 
 
 /* --------------
@@ -173,9 +148,6 @@
 
 /* @import "./css/general/window_header_colors.css"; /**/
 /* @import "./css/general/mail_panel_color.css"; /**/
-/* @import "./css/general/mail_panel_tree_colors.css"; /**/
-/* @import "./css/general/increase_row_height.css"; /**/
-/* @import "./css/general/transparent_mail_header.css"; /**/
 
 
 /* ----------------------------
@@ -187,10 +159,24 @@
 /* @import "./css/general/quickfilterbar_icons_and_text.css"; /**/
 
 
+/* ------------------
+   Toolbar positions
+   ------------------
+   
+   [!] only use one option at a time
+
+*/
+
+/* @import "./css/general/tbp_menubar_tabstoolbar_unifiedtoolbar.css"; /**/
+/* @import "./css/general/tbp_menubar_unifiedtoolbar_tabstoolbar.css"; /**/
+/* @import "./css/general/tbp_tabstoolbar_menubar_unifiedtoolbar.css"; /**/
+/* @import "./css/general/tbp_tabstoolbar_unifiedtoolbar_menubar.css"; /**/
+/* @import "./css/general/tbp_unifiedtoolbar_tabstoolbar_menubar.css"; /**/
+
+
 /* -------------------
    Menupoup appearance
    -------------------
-
 */
 
 /* @import "./css/general/menupopup_squared_borders.css"; /**/

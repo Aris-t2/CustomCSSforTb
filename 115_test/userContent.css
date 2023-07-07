@@ -55,13 +55,10 @@
 /* ------------------------------------
    Addon manager alternative appearance
    ------------------------------------
-   
-   [!] only use one option at a time
 
 */
 
 @import "./css/aboutaddons/addons_manager_alternative_appearance.css"; /**/
-/* @import "./css/aboutaddons/addons_manager_alternative_appearance_aero.css"; /**/
 
 /* --------------------------------------------
    Compact addon manager alternative appearance
@@ -89,13 +86,10 @@
 /* ===============================
    PREFERENCES (about:preferences)
    ===============================
-   
-   [!] only use one option at a time
 
 */
 
 @import "./css/aboutpreferences/preferences_alternative_appearance.css"; /**/
-/* @import "./css/aboutpreferences/preferences_alternative_appearance_aero.css"; /**/
 
 
 /* ---------------------

@@ -163,11 +163,11 @@
 	  margin-top: -26px !important;
 	}
 
-	#heading .header-name,
+	/*#heading .header-name,
 	#list-view-heading .header-name {
 	  font-size: inherit !important;
 	  font-weight: unset !important;
-	}
+	}*/
 
 	#nav-header {
 	  min-height: unset !important;
@@ -176,7 +176,7 @@
 	#header-utils-btn {
 	  min-height: 26px !important;
 	  min-width: 50px !important;
-	  -moz-box-ordinal-group: 0 !important;
+	  order: -1 !important;
 	}
 
 	#header-inner {
@@ -214,9 +214,9 @@
 	  width: unset !important;
 	}
 	
-	#header-search .textbox-input {
+	/*#header-search .textbox-input {
 	  font-size: 0.96em !important;
-	}
+	}*/
 	
 	#header-inner button,
 	#header-inner button .button-box {
@@ -243,7 +243,7 @@
 	}
 
 	.list-view-heading-inner {
-	  -moz-box-flex: 1 !important;
+	  flex: 1 !important;
 	  width: unset !important;
 	}
 
@@ -409,7 +409,7 @@
 	.main-search search-textbox {
 	  min-height: unset !important;
 	  width: unset !important;
-	  font-size: 12px !important;
+	  /*font-size: 12px !important;*/
 	}
 	
 	.main-heading .back-button,

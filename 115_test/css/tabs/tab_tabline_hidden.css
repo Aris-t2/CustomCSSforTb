@@ -2,6 +2,8 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
-#msgHeaderView {
-  background: unset !important;
+#tabs-toolbar .tabmail-tab .tab-line {
+  display: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
 }

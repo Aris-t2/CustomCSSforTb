@@ -174,21 +174,7 @@
 	  background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.4) 50%) !important;
 	}
 	
-	/* tab close icon appearance */
-	.tabmail-tab:not([selected]) .tab-close-button {
-	  list-style-image: url('../../images/close.png') !important;
-	 -moz-image-region: rect(0, 16px, 16px, 0) !important;
-	}
 
-	.tabmail-tab:not([selected]) .tab-close-button:hover,
-	.tabmail-tab:not([selected]) .tab-close-button:hover[selected="true"] {
-	  -moz-image-region: rect(0, 32px, 16px, 16px) !important;
-	}
-
-	.tabmail-tab:not([selected]) .tab-close-button:hover:active,
-	.tabmail-tab:not([selected]) .tab-close-button:hover:active[selected="true"] {
-	  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
-	}
 /*}*/
 
 
@@ -233,8 +219,6 @@
 		#tabs-toolbar:not(:-moz-lwtheme) {
 		  background-image: linear-gradient(to top, rgba(0,0,0,.6), transparent 1px) !important;
 		}
-		
-
 		
 	}
 	
@@ -285,30 +269,6 @@
   background-image: linear-gradient(#f5f6f7, #f5f6f7) !important;
 }
 
-@media (min-resolution: 1.0dppx) {
-	
-  /* tab close icon appearance */
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon {
-	list-style-image: url("../../images/close.png") !important;
-	-moz-image-region: rect(0, 16px, 16px, 0) !important;
-  }
-
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon:hover {
-	-moz-image-region: rect(0, 32px, 16px, 16px) !important;
-  }
-
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon:hover:active {
-	-moz-image-region: rect(0, 48px, 16px, 32px) !important;
-  }
-
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-icon,
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .button-box > .button-icon,
-  #messengerWindow:not(:-moz-lwtheme) .tabmail-tab .close-icon > .toolbarbutton-icon {
-	/*width: 16px !important;*/
-  }
-
-}
-
 
 /* Tb 57 tweaks */
 
@@ -330,7 +290,6 @@
   margin-inline-end: -8px !important;
 }
 
-/* remove fckng rtrdd space before tabs, seriously devs what is wrong with you? */
 :root[tabsintitlebar][sizemode=normal] #mail-toolbar-menubar2[autohide=true] ~ #tabs-toolbar > #tabbar-toolbar {
   margin-inline-start: 0px !important;
 }
@@ -356,35 +315,12 @@
   border: unset !important;
 }
 
-/* hide tab separators */
-.tabmail-tab::after,
-.tabmail-tab::before {
-  opacity: 0 !important;
-  border-image: unset !important;
-  border-image-slice: unset !important;
-  width: unset !important;
-}
-
-
-#tabs-toolbar .tabmail-tab .tab-line {
-  display: none !important;
-  height: 0 !important;
-  opacity: 0 !important;
-}
-
-.tabmail-tab .close-icon,
-.tabmail-tab .close-icon > .button-icon,
-.tabmail-tab .close-icon > .button-box > .button-icon,
-.tabmail-tab .close-icon > .toolbarbutton-icon {
-  background: unset !important;
-}
-
 #messengerWindow[sizemode="maximized"] #tabbar-toolbar {
   min-height: 1px !important;
   height: 1px !important;
 }
 
-/* fix tabs toolbar position */
+/* fix tabs toolbar position *//*
 :root[tabsintitlebar][sizemode=normal] #tabs-toolbar {
   padding-inline-start: 3px !important;
 }
@@ -392,8 +328,9 @@
   padding-inline-start: 0px !important;
 }
 
-/* fix menubars position */
+/* fix menubars position *//*
 #toolbar-menubar {
   padding-top: unset !important;
   margin-top: unset !important;
 }
+*/

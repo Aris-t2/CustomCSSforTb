@@ -2,6 +2,11 @@
 /* Github: https://github.com/aris-t2/customcssfortb ********************************************/
 
 
+:root {
+  --spaces-total-width: 0 !important;	
+}
+
+.spaces-toolbar,
 #spacesToolbar,
 #spacesPinnedButton,
 #spacesToolbarReveal {
