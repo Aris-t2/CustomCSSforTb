@@ -15,7 +15,7 @@
     transition-duration: 0ms !important;
 }
 
-.unified-toolbar-button,
+.unified-toolbar li:not(.search-bar,.spacer),
 :is(.chromeclass-toolbar,#header-view-toolbox,#attachmentView,.lightning-notification-bar,#quick-filter-bar) .toolbarbutton-1 {
 	appearance: none !important;
 	background: rgba(151,152,153,.05)
@@ -29,8 +29,7 @@
 				0 0 0 2px rgba(255,255,255,.1) inset !important;
 }
 
-
-.unified-toolbar-button:hover,
+.unified-toolbar li:not(.search-bar,.spacer):hover,
 :is(.chromeclass-toolbar,#header-view-toolbox,#attachmentView,.lightning-notification-bar,#quick-filter-bar) .toolbarbutton-1:hover {
   background-color: hsla(190,60%,70%,.5) !important;
   border-color: hsla(190,50%,65%,.8) hsla(190,50%,50%,.8) hsla(190,50%,40%,.8) !important;
@@ -42,7 +41,7 @@
 				   box-shadow .3s ease-in !important;
 }
 
-.unified-toolbar-button:is(:hover:active,[checked="true"],[open="true"]),
+.unified-toolbar li:not(.search-bar,.spacer):is(:hover:active,[checked="true"],[open="true"]),
 :is(.chromeclass-toolbar,#header-view-toolbox,#attachmentView,.lightning-notification-bar,#quick-filter-bar) .toolbarbutton-1:is(:hover:active,[checked="true"],[open="true"]) {
   background-color: transparent !important;
   border-color: rgba(0,0,0,.65) rgba(0,0,0,.55) rgba(0,0,0,.5) !important;
@@ -50,3 +49,17 @@
 			  0 0 2px rgba(0,0,0,.4) inset,
 			  0 1px 0 rgba(255,255,255,.4) !important;
 }
+
+.unified-toolbar-button.button,
+.unified-toolbar-button.button:hover,
+.unified-toolbar-button.button:is(:hover:active,[checked="true"],[open="true"]) {
+  appearance: none !important;
+  background-color: unset !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
+.unified-toolbar li {
+  margin: 0 1px !important;
+}
+

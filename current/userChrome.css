@@ -1,8 +1,8 @@
 /*===============================================================================
   Thunderbird userChrome.css tweaks: main file
   
-  Custom CSS for Thunderbird 115
-  Current version: 3.0.0test
+  Custom CSS for Thunderbird 115+
+  Current version: 3.0.0
 
   Based on 'Classic Theme Restorer'. 'CustomizeMyBird' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssfortb
@@ -74,7 +74,7 @@
 */
 
 @import "./css/buttons/ctb_on_main_toolbars.css"; /**/
-/* @import "./css/buttons/ctb_on_menubar.css"; /**/
+/* @import "./css/buttons/ctb_on_menubar.css"; /**/ /* e.g. menubar of compose window */
 /* @import "./css/buttons/ctb_on_spacestoolbar.css"; /**/
 
 
@@ -128,8 +128,11 @@
 /* --------------------------------------------------------------------------
    Adjust toolbar height to stop height changes when switching to other tabs
    --------------------------------------------------------------------------
+   
+   [!] might no be needed in TB 115.3+
+   
 */
-@import "./css/general/unified_toolbar_tweaks.css"; /**/
+/* @import "./css/general/unified_toolbar_tweaks.css"; /**/
 
 
 /* --------------
@@ -159,9 +162,9 @@
 /* @import "./css/general/quickfilterbar_icons_and_text.css"; /**/
 
 
-/* ------------------
-   Toolbar positions
-   ------------------
+/* -------------
+   Toolbar order
+   -------------
    
    [!] only use one option at a time
 
@@ -181,9 +184,9 @@
 
 /* @import "./css/general/menupopup_squared_borders.css"; /**/
 
-/* ----------
-   Hide items
-   ----------
+/* ----------------
+   Hide UI elements
+   ----------------
 */
 
 /* @import "./css/general/spacestoolbar_and_buttons_hidden.css"; /**/
